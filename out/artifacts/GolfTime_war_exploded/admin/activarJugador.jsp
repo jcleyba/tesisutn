@@ -6,7 +6,6 @@
 
 <%@page import="Controller.EmailUtility"%>
 <%@page import="Model.Usuario"%>
-<%@page import="Model.Jugador"%>
 <%@page import="Controller.UsuarioController"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
@@ -21,6 +20,7 @@
         String message = "Bienvenido a Golftime. \n \n Su cuenta ha sido activada y usted podrá inscribirse online a torneo tanto como consultar sus resultados y estadísticas. \n \n Adelante y suerte! \n Equipo Golftime";
         EmailUtility mailing = new EmailUtility();
         mailing.sendEmail(toAddress, subject, message);
+        uc.activarJugador(idJugador);
         response.sendRedirect("index.jsp");
         
         %>

@@ -6,7 +6,6 @@
 
 <%@page import="Controller.EmailUtility"%>
 <%@page import="Model.Usuario"%>
-<%@page import="Model.Jugador"%>
 <%@page import="Controller.UsuarioController"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 

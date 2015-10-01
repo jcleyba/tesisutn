@@ -23,7 +23,7 @@
     String direccion = "";
     String telefono = "";
     String email = "";
-    String path = request.getServletContext().getRealPath("")+"images/";
+    String path = request.getServletContext().getRealPath("")+"/images/";
     
     
     DiskFileItemFactory factory = new DiskFileItemFactory();

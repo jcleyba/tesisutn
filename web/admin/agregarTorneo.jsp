@@ -5,10 +5,6 @@
 --%>
 
 <%@page import="Controller.TorneosController"%>
-<%@page import="Model.Torneo"%>
-<%@page import="java.util.Date"%>
-<%@page import="java.text.ParseException"%>
-<%@page import="java.text.SimpleDateFormat"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%    
         String nombre = new String(request.getParameter("nombreTxt").getBytes("ISO-8859-1"),"UTF-8");

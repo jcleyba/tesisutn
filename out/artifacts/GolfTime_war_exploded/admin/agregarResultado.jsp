@@ -4,10 +4,6 @@
     Author     : juanleyba
 --%>
 
-<%@page import="Model.Usuario"%>
-<%@page import="Controller.TorneosController"%>
-<%@page import="Model.Torneo"%>
-<%@page import="Model.Administrador"%>
 <%@page import="Controller.ResultadosController"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%
