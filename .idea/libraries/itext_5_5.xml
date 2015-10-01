@@ -1,0 +1,25 @@
+<component name="libraryTable">
+  <library name="itext-5.5">
+    <CLASSES>
+      <root url="file://$USER_HOME$/NetBeansProjects/itext-5.5.6" />
+      <root url="file://$USER_HOME$/NetBeansProjects/javamail-1.4.4" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="file://$USER_HOME$/NetBeansProjects/javamail-1.4.4/docs/javadocs" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="file://$USER_HOME$/NetBeansProjects/javamail-1.4.4/demo" />
+      <root url="file://$USER_HOME$/NetBeansProjects/javamail-1.4.4/demo/client" />
+      <root url="file://$USER_HOME$/NetBeansProjects/javamail-1.4.4/demo/logging" />
+      <root url="file://$USER_HOME$/NetBeansProjects/javamail-1.4.4/demo/outlook" />
+      <root url="file://$USER_HOME$/NetBeansProjects/javamail-1.4.4/demo/servlet" />
+      <root url="file://$USER_HOME$/NetBeansProjects/javamail-1.4.4/demo/webapp/src/classes" />
+      <root url="file://$USER_HOME$/NetBeansProjects/javamail-1.4.4/demo/webapp/src/taglib" />
+      <root url="file://$PROJECT_DIR$/src" />
+      <root url="file://$USER_HOME$/NetBeansProjects/itext-5.5.6" />
+    </SOURCES>
+    <jarDirectory url="file://$USER_HOME$/NetBeansProjects/itext-5.5.6" recursive="false" />
+    <jarDirectory url="file://$USER_HOME$/NetBeansProjects/javamail-1.4.4" recursive="false" />
+    <jarDirectory url="file://$USER_HOME$/NetBeansProjects/itext-5.5.6" recursive="false" type="SOURCES" />
+  </library>
+</component>
