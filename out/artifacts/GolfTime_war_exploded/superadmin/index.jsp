@@ -36,16 +36,16 @@
                       <label for="nombre">Nombre Club</label>
                     </div>
                 <div class="input-field col s12">
-                      <input id="matricula" type="text" class="validate" required name="txtDireccion">
-                      <label for="matricula">Dirección</label>
+                      <input id="direccion" type="text" class="validate" required name="txtDireccion">
+                      <label for="direccion">Dirección</label>
                     </div>
                 <div class="input-field col s12">
-                      <input id="matricula" type="text" class="validate" required name="txtTelefono">
-                      <label for="matricula">Teléfono</label>
+                      <input id="telefono" type="text" class="validate" required name="txtTelefono">
+                      <label for="telefono">Teléfono</label>
                     </div>
                 <div class="input-field col s12">
-                      <input id="matricula" type="email" class="validate" required name="txtEmail">
-                      <label for="matricula">Email</label>
+                      <input id="email1" type="email" class="validate" required name="txtEmail">
+                      <label for="email1">Email</label>
                     </div>
             </div>
              <div class="row">
@@ -82,7 +82,7 @@
           <label for="password">Contraseña</label>
         </div>
            <div class="input-field col s6">
-          <input id="password" type="password" class="validate" required>
+          <input id="passwordRepeat" type="password" class="validate" required>
           <label for="password">Repetir Contraseña</label>
         </div>
       </div>
@@ -179,6 +179,21 @@
          <script type="text/javascript" src="/js/jquery.js"></script>
       <script type="text/javascript" src="/js/materialize.min.js"></script>
       <script type="text/javascript" src="/js/scripts.js"></script>
+      <script>
+          var password = document.getElementById("password")
+                  , confirm_password = document.getElementById("passwordRepeat");
+
+          function validatePassword(){
+              if(password.value != confirm_password.value) {
+                  confirm_password.setCustomValidity("Las contraseñas no coinciden");
+              } else {
+                  confirm_password.setCustomValidity('');
+              }
+          }
+
+          password.onchange = validatePassword;
+          confirm_password.onkeyup = validatePassword;
+      </script>
 
   </body>
 </html>

@@ -48,7 +48,7 @@
                     out.println("Bienvenido "+user.getUsername()+"  ");
                 
               }   %> 
-     <div id="loginForm" class="modal modal-fixed-footer">
+<div id="loginForm" class="modal modal-fixed-footer">
     <div class="modal-content">
         <h4 class="center-align">Iniciar Sesión</h4>
         <p>Ingrese sus datos para comenzar a utilizar Golftime.</p>
@@ -61,8 +61,8 @@
             </div>
              <div class="row">
                 <div class="input-field col s12">
-                  <input id="password" type="password" class="validate" required name="txtPassword">
-                  <label for="password">Contraseña</label>
+                  <input id="contraseña" type="password" class="validate" required name="txtPassword">
+                  <label for="contraseña">Contraseña</label>
                 </div>
              </div>
              <div class="row center-align">
@@ -73,8 +73,7 @@
     </form>
     </div>
   </div>
-     
-      <div id="singupForm" class="modal modal-fixed-footer">
+<div id="singupForm" class="modal modal-fixed-footer">
     <div class="modal-content">
         <h4 class="center-align">Registrarme</h4>
         <% 
@@ -104,8 +103,8 @@
           <label for="password">Contraseña</label>
         </div>
            <div class="input-field col s6">
-          <input id="password" type="password" class="validate" required>
-          <label for="password">Repetir Contraseña</label>
+          <input id="passwordRepeat" type="password" class="validate" required>
+          <label for="passwordRepeat">Repetir Contraseña</label>
         </div>
       </div>
       <div class="row">

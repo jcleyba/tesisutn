@@ -124,7 +124,7 @@ public class ServicioTorneos extends ServicioBase{
         try
         {
           abrirConexion();
-          String sql = "SELECT idtorneos,t.nombre,t.fecha,tt.tipoDescripcion FROM torneos t,tiposTorneo tt where t.clubes_idclubes = "+idclub+" and idtiposTorneo = tiposTorneo_idtiposTorneo";
+          String sql = "SELECT idtorneos,t.nombre,t.fecha,tt.tipoDescripcion FROM torneos t,tiposTorneo tt where t.clubes_idclubes = "+idclub+" and idtiposTorneo = tiposTorneo_idtiposTorneo ORDER BY 3";
           PreparedStatement st = con.prepareStatement(sql);
           ResultSet rs = st.executeQuery();
           
@@ -271,7 +271,7 @@ public class ServicioTorneos extends ServicioBase{
         try
         {
           abrirConexion();
-           String sql = "SELECT idtorneos,t.nombre,t.fecha,tt.tipoDescripcion FROM torneos t,tiposTorneo tt where t.fecha >= CURDATE() and idtiposTorneo = tiposTorneo_idtiposTorneo and clubes_idclubes="+idClub;
+           String sql = "SELECT idtorneos,t.nombre,t.fecha,tt.tipoDescripcion FROM torneos t,tiposTorneo tt where t.fecha >= CURDATE() and idtiposTorneo = tiposTorneo_idtiposTorneo and clubes_idclubes="+idClub+" ORDER BY 3";
           PreparedStatement st = con.prepareStatement(sql);
           ResultSet rs = st.executeQuery();
           
