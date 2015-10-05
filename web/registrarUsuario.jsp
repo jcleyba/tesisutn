@@ -33,8 +33,8 @@
  <%@include file="html.jsp" %>
   <body>
       <jsp:include page="header.jsp" />
+      <h4 class="white-text">Bienvenido a Golf Time!</h4>
       <div class="container">
-          <h4>Bienvenido a Golf Time!</h4>
           <p>Su registro ha sido exitoso. Para comenzar a utilizar el sistema e inscribirse a torneos, el administrador de su club deberá activar su cuenta.</p>
           <p>Si en las próximas 24hs. hábiles usted no puede inscribirse, contacte a su club de origen.</p>
       </div> 
