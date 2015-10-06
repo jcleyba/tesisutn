@@ -8,7 +8,7 @@
 <%@include file="html.jsp" %>
   <body>
       <jsp:include page="header.jsp" />
-      <h4 class="white-text">Iniciar sesión administrador</h4>
+      <h4 class="teal-text">Iniciar sesión administrador</h4>
       <div class="container">
           <form action="loginAdmin.jsp" method="POST">
               Usuario: <input type="text" name="usernameTxt" required><br>

@@ -10,7 +10,7 @@
     <%@include file="html.jsp" %>
   <body>
       <jsp:include page="header.jsp" />
-      <h4 class="white-text">Inscripción existente</h4>
+      <h4 class="teal-text">Inscripción existente</h4>
       <div class="container">
           <p class="red-text">Usted ya se ha inscripto al torneo seleccionado.</p>
           <a href="index.jsp" class="btn">Volver a inicio</a>
@@ -19,11 +19,11 @@
           <div class="container  blue-grey darken-4">
             <div class="row">
               <div class="col l6 s12">
-                <h5 class="white-text">Gracias por visitar Golftime</h5>
+                <h5 class="teal-text">Gracias por visitar Golftime</h5>
                 <p class="grey-text text-lighten-4">La primera aplicación web de inscripciones online.</p>
               </div>
               <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
+                <h5 class="teal-text">Links</h5>
                 <ul>
                   <li><a class="grey-text text-lighten-3" href="clubes.jsp">Clubes</a></li>
                   <li><a class="grey-text text-lighten-3" href="torneos.jsp">Torneos</a></li>

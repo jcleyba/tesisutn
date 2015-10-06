@@ -21,11 +21,11 @@
     <%@include file="html.jsp" %>
   <body>
       <jsp:include page="header.jsp" />
-      <h4 class="white-text">Próximos torneos disponibles</h4>
+      <h4 class="teal-text">Próximos torneos disponibles</h4>
       <div class="container">
           <div>
                 <% for(Torneo item:lista){%>
-        <div class="col s4 m4">
+        <div class="col s2 m2">
           <div class="card">
            
             <div class="card-content">
@@ -51,11 +51,11 @@
           <div class="container  blue-grey darken-4">
             <div class="row">
               <div class="col l6 s12">
-                <h5 class="white-text">Gracias por visitar Golftime</h5>
+                <h5 class="teal-text">Gracias por visitar Golftime</h5>
                 <p class="grey-text text-lighten-4">La primera aplicación web de inscripciones online.</p>
               </div>
               <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
+                <h5 class="teal-text">Links</h5>
                 <ul>
                   <li><a class="grey-text text-lighten-3" href="clubes.jsp">Clubes</a></li>
                   <li><a class="grey-text text-lighten-3" href="torneos.jsp">Torneos</a></li>

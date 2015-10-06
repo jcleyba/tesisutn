@@ -11,7 +11,7 @@
 <%@page import="Model.Usuario"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <div class="navbar-fixed">
-<nav  class="teal darken-4">
+<nav  class="teal">
     <div class="nav-wrapper">
       <a href="/" class="brand-logo center">Golftime</a>
       <ul id="nav-mobile" class="left hide-on-med-and-down">
@@ -40,14 +40,6 @@
     </div>
   </nav>
     </div>
-      <% 
-              UsuarioController uc = new UsuarioController();
-              boolean isAdmin = uc.isAdmin(user);
-              if(user != null && !isAdmin)
-                {
-                    out.println("Bienvenido "+user.getUsername()+"  ");
-                
-              }   %> 
 <div id="loginForm" class="modal modal-fixed-footer">
     <div class="modal-content">
         <h4 class="center-align">Iniciar Sesión</h4>

@@ -27,7 +27,7 @@
     %>
   <body>
       <jsp:include page="header.jsp" />
-      <h4 class="white-text">Bienvenido <%=ju.getNombre()%>&nbsp;  <%=ju.getApellido()%></h4>
+      <h4 class="teal-text">Bienvenido <%=ju.getNombre()%>&nbsp;  <%=ju.getApellido()%></h4>
       <div class="container">
           <div>
                <table class="bordered">
