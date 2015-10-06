@@ -153,7 +153,7 @@ public class ServicioInscripciones extends ServicioBase{
        
         public boolean existeInscripcion(int idTorneo,int idJugador)
     {
-        boolean posible = false;
+        boolean inscripto = false;
         try
         {            
             abrirConexion();
@@ -162,10 +162,10 @@ public class ServicioInscripciones extends ServicioBase{
             ResultSet rs = st.executeQuery();
             if(rs.next())
             {
-                posible = false;
+                inscripto = true;
             }
             else {
-                posible = true;
+                inscripto = false;
             }
             st.close();
         }
@@ -177,7 +177,7 @@ public class ServicioInscripciones extends ServicioBase{
         {
             cerrarConexion();
         }
-        return posible;
+        return inscripto;
     }
         
         
