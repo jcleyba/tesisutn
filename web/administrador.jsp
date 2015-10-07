@@ -17,4 +17,6 @@
               <input type="submit" value="Enviar" class="btn">
           </form>
       </div>
-    </body>
+      <jsp:include page="/footer.jsp" />
+
+  </body>

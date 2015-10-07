@@ -32,8 +32,8 @@
  <%@include file="html.jsp" %>
   <body>
       <jsp:include page="header.jsp" />
+      <h4>¡Felicitaciones!</h4>
       <div class="container">
-          <h4>¡Felicitaciones!</h4>
           <p>Su inscripcion ha sido exitosa. En los próximos minutos recibirá un mail de confirmación de su inscripción. Adelante y suerte!.</p>
       </div> 
     </body>

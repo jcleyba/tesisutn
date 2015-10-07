@@ -1,7 +1,5 @@
 package DAO;
 
-import Model.Inscripcion;
-
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
@@ -56,6 +54,41 @@ public class ServicioEstadisticas extends ServicioBase {
             st.executeQuery();
             PreparedStatement st2 = con.prepareStatement(sql2);
             ResultSet rs = st2.executeQuery();
+            while(rs.next())
+            {
+                ArrayList listaMixta = new ArrayList();
+                listaMixta.add(rs.getString(1).toString());
+                listaMixta.add(rs.getFloat(2));
+                listaMixta.add(rs.getFloat(3));
+                listaMixta.add(rs.getFloat(4));
+                listaSalida.add(listaMixta);
+            }
+
+            rs.close();
+            st.close();
+        }
+        catch(Exception e)
+        {
+            System.out.println("Error al agregar el ingresar. Causa: " + e.getMessage());
+        }
+        finally
+        {
+            cerrarConexion();
+        }
+
+        return listaSalida;
+    }
+
+    public ArrayList getEstadisticasPorMesPorClub(int idClub)
+    {
+
+        ArrayList listaSalida = new ArrayList();
+        try
+        {
+            abrirConexion();
+            String sql = "";
+            PreparedStatement st = con.prepareStatement(sql);
+            ResultSet rs = st.executeQuery();
             while(rs.next())
             {
                 ArrayList listaMixta = new ArrayList();

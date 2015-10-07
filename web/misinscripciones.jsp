@@ -10,8 +10,7 @@
 <%@page import="java.util.List"%>
 <%@page import="Model.Torneo"%>
 <%@page import="Controller.TorneosController"%>
-<%@page import="Model.Club"%>
-<%@page import="Controller.ClubesController"%>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
     <%@include file="html.jsp" %>
     <% 
@@ -59,8 +58,7 @@
          
           </div>
       </div>
-       
-      <script type="text/javascript" src="js/jquery.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
-      <script type="text/javascript" src="js/scripts.js"></script>
-    </body>
+
+      <jsp:include page="/footer.jsp" />
+
+  </body>
