@@ -9,7 +9,7 @@ and open the template in the editor.
 */
 body {
     background:url(/images/golf2c.png) no-repeat top center;
-    background-size: 100%;
+    background-size: cover;
 }
 nav {
     margin-bottom:80px;
@@ -19,6 +19,9 @@ h4.teal-text {
     max-width: 70%;
     margin:20px auto;
     
+}
+nav .brand-logo {
+    top:6px;
 }
 .container
 {  
@@ -37,6 +40,10 @@ footer .container {
 }
 
 .dropdown-button {
-    min-width:150px;
+    min-width:200px;
     
+}
+.collection .collection-item {
+    background-color: transparent !important;
+
 }

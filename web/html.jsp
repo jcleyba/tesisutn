@@ -12,6 +12,7 @@
           <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
           <link type="text/css" rel="stylesheet" href="/css/style.css"  media="screen,projection"/>
           <script src="/js/dateHandler.js" type="text/javascript"></script>
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       

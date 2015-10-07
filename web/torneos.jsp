@@ -7,8 +7,6 @@
 <%@page import="Model.Torneo"%>
 <%@page import="java.util.List"%>
 <%@page import="Controller.TorneosController"%>
-<%@page import="Model.Club"%>
-<%@page import="Controller.ClubesController"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="Model.Usuario"%>
 <% 
@@ -23,9 +21,9 @@
       <jsp:include page="header.jsp" />
       <h4 class="teal-text">Próximos torneos disponibles</h4>
       <div class="container">
-          <div>
+        <div class="row">
                 <% for(Torneo item:lista){%>
-        <div class="col s2 m2">
+        <div class="col m6">
           <div class="card">
            
             <div class="card-content">
@@ -45,8 +43,8 @@
           </div>
         </div>
          <%}%>
+            </div>
           </div>
-      </div>
           <footer class="page-footer blue-grey darken-4">
           <div class="container  blue-grey darken-4">
             <div class="row">
