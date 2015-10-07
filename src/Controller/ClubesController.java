@@ -108,7 +108,7 @@ public class ClubesController {
     
     public void actualizarClub(int idclub, String nombre, String logo, String direccion, String telefono, String email)
     {
-    ServicioClubes sc = new ServicioClubes();
+        ServicioClubes sc = new ServicioClubes();
         Club club = new Club(idclub,nombre,logo,direccion,telefono,email);
         sc.updateClub(club);
     }

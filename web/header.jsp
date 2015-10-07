@@ -13,7 +13,7 @@
 <div class="navbar-fixed">
 <nav  class="teal">
     <div class="nav-wrapper">
-      <a href="index.jsp" class="brand-logo center"><img src="/images/golftime_logo.png" alt="Logo"></a>
+      <a href="index.jsp" class="brand-logo center"><img src="/images/golftime.svg" alt="Logo"  title="Golftime"></a>
       <ul id="nav-mobile" class="left hide-on-med-and-down">
         <li><a href="/clubes.jsp" >Clubes</a></li>
         <li><a href="/torneos.jsp">Torneos</a></li>
@@ -31,12 +31,19 @@
         <%}%>
        
       </ul>
-         <%if( user != null){%>
+         <%
+             UsuarioController uc = new UsuarioController();
+             if(user != null && !uc.isAdmin(user)){
+         %>
         <ul id="dropdown1" class="dropdown-content">
              <li><a href="usuario.jsp?id=<%=user.getIdUsuario()%>">Actualizar Datos</a></li>
             <li><a href="misinscripciones.jsp?idjugador=<%=user.getIdUsuario()%>">Mis Inscripciones</a></li>
             <li><a href="misestadisticas.jsp?idjugador=<%=user.getIdUsuario()%>">Mis Estadísticas</a></li>
   
+        </ul>
+        <%}else if(user != null){%>
+        <ul id="dropdown2" class="dropdown-content">
+        <li><a href="misestadisticas.jsp">Mis Estadísticas</a></li>
         </ul>
         <%}%>
     </div>

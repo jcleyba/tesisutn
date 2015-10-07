@@ -19,10 +19,9 @@
         Usuario user = (Usuario)session.getAttribute("usuario");
         Jugador ju = uc.getJugador(user.getIdUsuario());
 
-        int idJugador = ju.getIdJugador();
         EstadisticasController ec = new EstadisticasController();
-        float[] array = ec.estadisticasJugador(idJugador) ;
-        ArrayList listaPorMes = ec.estadisticasPorMes(idJugador);
+        float[] array = ec.estadisticasJugador(ju.getIdJugador()) ;
+        ArrayList listaPorMes = ec.estadisticasPorMes(ju.getIdJugador());
     %>
   <body>
   <script type="text/javascript">

@@ -4,16 +4,13 @@
     Author     : juanleyba
 --%>
 
-<%@page import="Controller.TorneosController"%>
 <%@page import="Model.Torneo"%>
 <%@page import="Model.Administrador"%>
-<%@page import="Controller.UsuarioController"%>
 <%@page import="Model.Jugador"%>
 <%@page import="Model.Usuario"%>
-<%@page import="Controller.AdminController"%>
 <%@page import="java.util.List"%>
-<%@page import="Controller.ClubesController"%>
 <%@page import="Model.Club"%>
+<%@ page import="Controller.*" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <jsp:include page="checkRol.jsp" />
 <!DOCTYPE html>
@@ -37,6 +34,7 @@
     idclub = cc.getAdminClubId(admin);
     TorneosController tc = new TorneosController();
     listaTorneos = tc.listarTorneos(idclub);
+
     }
     %>
 <html>
@@ -50,12 +48,14 @@
               <ul class="tabs">
                   <li class="tab col s3"><a  href="#clubes">Jugadores</a></li>
                   <li class="tab col s3"><a  href="#admin" class="active">Torneos</a></li>
-                  <li class="tab col s3"><a  href="#stats" >Estadísticas</a></li>
               </ul>
             </div>
             <div id="clubes" class="col s12">
-             <div id="loginForm" class="">
-             <a href="imprimirJugadores.jsp?idClub=<%=idclub%>" class="btn right">Imprimir Lista</a>
+             <div id="" class="">
+                 <br>
+                 <br>
+             <a href="imprimirJugadores.jsp?idClub=<%=idclub%>" class="btn left">Imprimir Lista</a>
+                 <br>
               <table class="bordered">
                 <thead>
                   <tr>
@@ -91,6 +91,9 @@
           </div>
              </div>
      <div id="admin" class="col s12">
+         <br>
+         <a href="nuevotorneo.jsp?id=<%=idclub%>" class="btn">Nuevo torneo</a>
+         <br>
          <table class="bordered">
         <thead>
           <tr>
@@ -127,12 +130,10 @@
           
         </tbody>
       </table>
-         <br>   
-             <a href="nuevotorneo.jsp?id=<%=idclub%>" class="btn">Nuevo torneo</a>
+
         
      </div>
-            <div id="stats">
-            </div>
+
     
   </div>
                    <jsp:include page="/footer.jsp" />

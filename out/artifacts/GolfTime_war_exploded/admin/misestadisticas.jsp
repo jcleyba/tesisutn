@@ -10,18 +10,20 @@
 <%@ page import="Model.Usuario" %>
 <%@ page import="Model.Jugador" %>
 <%@ page import="java.util.ArrayList" %>
+<%@ page import="Model.Administrador" %>
 
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-    <%@include file="html.jsp" %>
+    <%@include file="/html.jsp" %>
     <%
         UsuarioController uc = new UsuarioController();
-        Usuario user = (Usuario)session.getAttribute("usuario");
-        Jugador ju = uc.getJugador(user.getIdUsuario());
-
+        Administrador admin = (Administrador)session.getAttribute("usuario");
+        Usuario user = uc.getAdmin(admin.getIdAdministrador());
+        int idclub = user.getIdClub();
         EstadisticasController ec = new EstadisticasController();
-        float[] array = ec.estadisticasJugador(ju.getIdJugador()) ;
-        ArrayList listaPorMes = ec.estadisticasPorMes(ju.getIdJugador());
+        float[] array = ec.estadisticasGeneralesPorClub(idclub);
+
+
     %>
   <body>
   <script type="text/javascript">
@@ -29,37 +31,12 @@
       google.setOnLoadCallback(drawChart);
       function drawChart() {
           var data = google.visualization.arrayToDataTable([
-              ['Promedios','Valores'],
-              ['Promedio Score',<%=array[0]%>],
-              ['Promedio Handicap',<%=array[1]%>],
-              ['Torneos Jugados',<%=array[2]%>],
-          ]);
-          var data2 = google.visualization.arrayToDataTable([
-              ['Mes', 'Promedio Score', 'Promedio Handicap', 'Torneos Jugados'],
-              <%for(Object item : listaPorMes){%>
-              [
-                  <%for(Object j : (ArrayList)item)
-                  {
-                    if(j instanceof String){%>
-                  '<%=j.toString()%>',
-                  <%}else{%>
-                  <%=j.toString()%>,
-                  <%}%>
+              ['Valores','Promedios'],
+              ['Promedio Jugadores por torneos',<%=array[0]%>],
+              ['Torneos Jugados',<%=array[1]%>],
 
-                  <%}%>
-              ],
-              <%}%>
           ]);
 
-          var options2 = {
-              chart: {
-                  title: 'Estadísticas por Mes'
-              },
-              hAxis: {title: 'Mes'},
-              vAxis: {minValue: 0},
-              height: 400,
-              legend: { position: 'top' }
-          };
 
           var options = {
               chart: {
@@ -73,8 +50,8 @@
           setTimeout(function(){chart2.draw(data2, options2);},500);
       }
   </script>
-      <jsp:include page="header.jsp" />
-      <h4 class="teal-text">Bienvenido <%=ju.getNombre()%>&nbsp;  <%=ju.getApellido()%></h4>
+      <jsp:include page="/header.jsp" />
+      <h4 class="teal-text">Bienvenido a sus estadísticas</h4>
       <div class="container" style="background-color: white">
           <div id="chart"></div>
           <div id="chart_div"></div>

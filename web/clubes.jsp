@@ -12,6 +12,9 @@
       ClubesController cc = new ClubesController();
     List<Club> lista = cc.listarClubesActivos();
 %>
+<!DOCTYPE html>
+<html>
+<%@include file="html.jsp" %>
     <%@include file="html.jsp" %>
   <body>
       <jsp:include page="header.jsp" />
@@ -37,8 +40,6 @@
       </div>
       </div>
             <jsp:include page="/footer.jsp" />
-      <script type="text/javascript" src="js/jquery.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
-      <script type="text/javascript" src="js/scripts.js"></script>
+
     </body>
     </html>

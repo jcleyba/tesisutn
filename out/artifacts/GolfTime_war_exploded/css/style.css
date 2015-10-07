@@ -20,8 +20,8 @@ h4.teal-text {
     margin:20px auto;
     
 }
-nav .brand-logo {
-    top:6px;
+nav .brand-logo img{
+    width: 55%;
 }
 .container
 {  

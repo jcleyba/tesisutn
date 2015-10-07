@@ -31,7 +31,7 @@ public class ServicioEstadisticas extends ServicioBase {
         }
         catch(Exception e)
         {
-            System.out.println("Error al agregar el ingresar. Causa: " + e.getMessage());
+            System.out.println("Error al obtener estadísticas. Causa: " + e.getMessage());
         }
         finally
         {
@@ -69,7 +69,7 @@ public class ServicioEstadisticas extends ServicioBase {
         }
         catch(Exception e)
         {
-            System.out.println("Error al agregar el ingresar. Causa: " + e.getMessage());
+            System.out.println("Error al obtener estadísticas. Causa: " + e.getMessage());
         }
         finally
         {
@@ -79,24 +79,21 @@ public class ServicioEstadisticas extends ServicioBase {
         return listaSalida;
     }
 
-    public ArrayList getEstadisticasPorMesPorClub(int idClub)
+    public ArrayList getEstadisticasGeneralesPorClub(int idClub)
     {
 
         ArrayList listaSalida = new ArrayList();
         try
         {
             abrirConexion();
-            String sql = "";
+            String sql = "select AVG(inscripciones),COUNT(torneosjugados) from (SELECT COUNT(idinscripciones) as 'inscripciones',i.torneos_idtorneos as 'torneosjugados' FROM inscripciones i inner join torneos t on i.torneos_idtorneos = t.idtorneos where t.clubes_idclubes = "+idClub+" group by 2) as Tabla";
             PreparedStatement st = con.prepareStatement(sql);
             ResultSet rs = st.executeQuery();
             while(rs.next())
             {
-                ArrayList listaMixta = new ArrayList();
-                listaMixta.add(rs.getString(1).toString());
-                listaMixta.add(rs.getFloat(2));
-                listaMixta.add(rs.getFloat(3));
-                listaMixta.add(rs.getFloat(4));
-                listaSalida.add(listaMixta);
+
+                listaSalida.add(rs.getFloat(1));
+                listaSalida.add(rs.getFloat(2));
             }
 
             rs.close();
@@ -104,7 +101,7 @@ public class ServicioEstadisticas extends ServicioBase {
         }
         catch(Exception e)
         {
-            System.out.println("Error al agregar el ingresar. Causa: " + e.getMessage());
+            System.out.println("Error al obtener estadísticas. Causa: " + e.getMessage());
         }
         finally
         {
