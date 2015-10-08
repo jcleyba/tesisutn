@@ -2,31 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd8b00f9-4e5a-4d3d-87b3-0bb54d78a062" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/admin/misestadisticas.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/WEB-INF/classes/Controller/EstadisticasController.class" afterPath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/WEB-INF/classes/Controller/EstadisticasController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GolfTime/Controller/EstadisticasController.class" afterPath="$PROJECT_DIR$/out/production/GolfTime/Controller/EstadisticasController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/WEB-INF/classes/DAO/ServicioEstadisticas.class" afterPath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/WEB-INF/classes/DAO/ServicioEstadisticas.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GolfTime/DAO/ServicioEstadisticas.class" afterPath="$PROJECT_DIR$/out/production/GolfTime/DAO/ServicioEstadisticas.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/ClubesController.java" afterPath="$PROJECT_DIR$/src/Controller/ClubesController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/EstadisticasController.java" afterPath="$PROJECT_DIR$/src/Controller/EstadisticasController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DAO/ServicioEstadisticas.java" afterPath="$PROJECT_DIR$/src/DAO/ServicioEstadisticas.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/club.jsp" afterPath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/club.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/club.jsp" afterPath="$PROJECT_DIR$/web/club.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/clubes.jsp" afterPath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/clubes.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/clubes.jsp" afterPath="$PROJECT_DIR$/web/clubes.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/images/golftime.svg" afterPath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/images/golftime.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/golftime.svg" afterPath="$PROJECT_DIR$/web/images/golftime.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/header.jsp" afterPath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/header.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/header.jsp" afterPath="$PROJECT_DIR$/web/header.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/admin/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/admin/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/admin/index.jsp" afterPath="$PROJECT_DIR$/web/admin/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/misestadisticas.jsp" afterPath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/misestadisticas.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/misestadisticas.jsp" afterPath="$PROJECT_DIR$/web/misestadisticas.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/css/style.css" afterPath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/style.css" afterPath="$PROJECT_DIR$/web/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/torneo.jsp" afterPath="$PROJECT_DIR$/web/torneo.jsp" />
     </list>
     <ignored path="GolfTime.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -89,11 +65,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5523012">
+            <state vertical-scroll-proportion="0.0">
               <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="torneo.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/torneo.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-53.75">
+              <caret line="86" column="48" selection-start-line="86" selection-start-column="41" selection-end-line="86" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServicioInscripciones.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/DAO/ServicioInscripciones.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.26086956">
+              <caret line="153" column="68" selection-start-line="153" selection-start-column="68" selection-end-line="153" selection-end-column="68" />
               <folding />
             </state>
           </provider>
@@ -125,33 +121,6 @@
             <state vertical-scroll-proportion="0.0">
               <caret line="58" column="46" selection-start-line="58" selection-start-column="46" selection-end-line="58" selection-end-column="46" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="misestadisticas.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/misestadisticas.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="71" selection-start-line="23" selection-start-column="71" selection-end-line="23" selection-end-column="71" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ServicioEstadisticas.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DAO/ServicioEstadisticas.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1444225196000" expanded="true" signature="402:570" placeholder="SELECT avg(s..." />
-                <marker date="1444225196000" expanded="true" signature="1429:1730" placeholder="SELECT MONTH..." />
-                <marker date="1444225196000" expanded="true" signature="2796:3075" placeholder="select AVG(i..COUNT..." />
-                <marker date="1444225196000" expanded="true" signature="2850:3043" placeholder="SELECT COUNT..." />
-                <marker date="1444225196000" expanded="true" signature="2850:3065" placeholder="SELECT COUNT..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -211,6 +180,7 @@
         <option value="$PROJECT_DIR$/web/images/golftime.svg" />
         <option value="$PROJECT_DIR$/web/header.jsp" />
         <option value="$PROJECT_DIR$/web/css/style.css" />
+        <option value="$PROJECT_DIR$/web/torneo.jsp" />
       </list>
     </option>
   </component>
@@ -383,6 +353,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GolfTime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TESIS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DAO" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -767,12 +755,12 @@
       <workItem from="1444081207216" duration="1082000" />
       <workItem from="1444173861484" duration="13558000" />
       <workItem from="1444219619373" duration="7668000" />
-      <workItem from="1444247440800" duration="65000" />
+      <workItem from="1444247440800" duration="810000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32302000" />
+    <option name="totallyTimeSpent" value="33047000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="826" extended-state="6" />
@@ -787,10 +775,10 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31062672" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31062672" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2074392" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2074392" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -823,7 +811,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="49" />
+      <option name="time" value="50" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -910,13 +898,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/torneo.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.125">
-          <caret line="132" column="17" selection-start-line="109" selection-start-column="5" selection-end-line="132" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/admin/activarJugador.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.0">
@@ -970,6 +951,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="299" column="0" selection-start-line="299" selection-start-column="0" selection-end-line="299" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11039#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1019,13 +1004,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="95" column="11" selection-start-line="95" selection-start-column="11" selection-end-line="95" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DAO/ServicioInscripciones.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5971897">
-          <caret line="31" column="23" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -1096,6 +1074,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.555555">
           <caret line="110" column="8" selection-start-line="110" selection-start-column="8" selection-end-line="110" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1103,6 +1082,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.7777777">
           <caret line="60" column="19" selection-start-line="60" selection-start-column="19" selection-end-line="60" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1126,11 +1106,11 @@
           <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1444225196000" expanded="true" signature="402:570" placeholder="SELECT avg(s..." />
-            <marker date="1444225196000" expanded="true" signature="1429:1730" placeholder="SELECT MONTH..." />
-            <marker date="1444225196000" expanded="true" signature="2796:3075" placeholder="select AVG(i..COUNT..." />
-            <marker date="1444225196000" expanded="true" signature="2850:3043" placeholder="SELECT COUNT..." />
-            <marker date="1444225196000" expanded="true" signature="2850:3065" placeholder="SELECT COUNT..." />
+            <marker date="1444225196000" expanded="true" signature="-1:-1" placeholder="SELECT avg(s..." />
+            <marker date="1444225196000" expanded="true" signature="-1:-1" placeholder="SELECT MONTH..." />
+            <marker date="1444225196000" expanded="true" signature="-1:-1" placeholder="select AVG(i..COUNT..." />
+            <marker date="1444225196000" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
+            <marker date="1444225196000" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
           </folding>
         </state>
       </provider>
@@ -1201,8 +1181,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5523012">
+        <state vertical-scroll-proportion="0.0">
           <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/torneo.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-53.75">
+          <caret line="86" column="48" selection-start-line="86" selection-start-column="41" selection-end-line="86" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DAO/ServicioInscripciones.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26086956">
+          <caret line="153" column="68" selection-start-line="153" selection-start-column="68" selection-end-line="153" selection-end-column="68" />
           <folding />
         </state>
       </provider>
