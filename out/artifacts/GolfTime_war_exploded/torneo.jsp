@@ -14,6 +14,8 @@
 <%@page import="Model.Club"%>
 <%@page import="Controller.ClubesController"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+
     <%@include file="/html.jsp" %>
       <body>
       <jsp:include page="/header.jsp" />
