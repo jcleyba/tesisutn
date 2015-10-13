@@ -110,4 +110,47 @@ public class ServicioEstadisticas extends ServicioBase {
 
         return listaSalida;
     }
+
+    public ArrayList getEstadisticasPorMesPorClub(int idClub)
+    {
+
+        ArrayList listaSalida = new ArrayList();
+        try
+        {
+            abrirConexion();
+            String sql = "SET lc_time_names = 'es_UY'";
+            String sql2 = "SELECT MONTHNAME (T.FECHA),COUNT(T.IDTORNEOS) AS CANT_TORNEOS, SUM(I.CANT_INSC) AS CANT_INSCRIPCIONES,(SUM(I.CANT_INSC)/COUNT(T.IDTORNEOS)) \n" +
+                    "FROM TORNEOS T \n" +
+                    "INNER JOIN (SELECT COUNT(IDINSCRIPCIONES) AS CANT_INSC, TORNEOS_IDTORNEOS \n" +
+                    "            FROM inscripciones \n" +
+                    "            GROUP BY TORNEOS_IDTORNEOS) AS I ON I.TORNEOS_IDTORNEOS = T.IDTORNEOS \n" +
+                    "WHERE T.CLUBES_IDCLUBES = "+idClub+" and YEAR(T.FECHA) = YEAR(CURDATE()) GROUP BY 1 order by 1 desc";
+            PreparedStatement st = con.prepareStatement(sql);
+            st.executeQuery();
+            PreparedStatement st2 = con.prepareStatement(sql2);
+            ResultSet rs = st2.executeQuery();
+            while(rs.next())
+            {
+                ArrayList listaMixta = new ArrayList();
+                listaMixta.add(rs.getString(1).toString());
+                listaMixta.add(rs.getFloat(2));
+                listaMixta.add(rs.getFloat(3));
+                listaMixta.add(rs.getFloat(4));
+                listaSalida.add(listaMixta);
+            }
+
+            rs.close();
+            st.close();
+        }
+        catch(Exception e)
+        {
+            System.out.println("Error al obtener estadísticas. Causa: " + e.getMessage());
+        }
+        finally
+        {
+            cerrarConexion();
+        }
+
+        return listaSalida;
+    }
 }

@@ -43,4 +43,12 @@ public class EstadisticasController {
         }
         return floatArray;
     }
+    public ArrayList estadisticasPorMesPorClub(int idClub)
+    {
+        ArrayList listaMixta = servicio.getEstadisticasPorMesPorClub(idClub);
+
+        return listaMixta;
+    }
+
 }
+

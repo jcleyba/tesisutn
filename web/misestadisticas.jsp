@@ -26,7 +26,7 @@
     %>
   <body>
   <script type="text/javascript">
-      google.load("visualization", "1.1", {packages:["bar"]});
+      google.load("visualization", "1", {packages:["bar"]});
       google.setOnLoadCallback(drawChart);
       function drawChart() {
           var data = google.visualization.arrayToDataTable([
@@ -79,6 +79,7 @@
       <div class="container" style="background-color: white">
           <div id="chart"></div>
           <div id="chart_div"></div>
+          <head></head>
       </div>
   <jsp:include page="/footer.jsp" />
 

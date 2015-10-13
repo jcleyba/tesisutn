@@ -9,6 +9,7 @@
 <%@ page import="Controller.UsuarioController" %>
 <%@ page import="Model.Usuario" %>
 <%@ page import="Model.Administrador" %>
+<%@ page import="java.util.ArrayList" %>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -20,12 +21,13 @@
         int idclub = user.getIdClub();
         EstadisticasController ec = new EstadisticasController();
         float[] array = ec.estadisticasGeneralesPorClub(idclub);
+        ArrayList arrayPorMes = ec.estadisticasPorMesPorClub(idclub);
 
 
     %>
   <body>
   <script type="text/javascript">
-      google.load("visualization", "1.1", {packages:["bar"]});
+      google.load("visualization", "1", {packages:["bar"]});
       google.setOnLoadCallback(drawChart);
       function drawChart() {
           var data = google.visualization.arrayToDataTable([
@@ -35,12 +37,37 @@
 
           ]);
 
+          var data2 = google.visualization.arrayToDataTable([
+              ['Mes', 'Torneos jugados', 'Cantidad Inscriptos', 'Promedio Inscripciones'],
+              <%for(Object item : arrayPorMes){%>
+              [
+                  <%for(Object j : (ArrayList)item)
+                  {
+                    if(j instanceof String){%>
+                  '<%=j.toString()%>',
+                  <%}else{%>
+                  <%=j.toString()%>,
+                  <%}%>
+
+                  <%}%>
+              ],
+              <%}%>
+          ]);
 
           var options = {
               chart: {
                   title: 'Estadísticas Generales'
               },
               height: 400
+          };
+          var options2 = {
+              chart: {
+                  title: 'Estadísticas por Mes'
+              },
+              hAxis: {title: 'Mes'},
+              vAxis: {minValue: 0},
+              height: 400,
+              legend: { position: 'top' }
           };
           var chart = new google.charts.Bar(document.getElementById('chart'));
           var chart2 = new google.charts.Bar(document.getElementById('chart_div'));
@@ -53,6 +80,7 @@
       <div class="container" style="background-color: white">
           <div id="chart"></div>
           <div id="chart_div"></div>
+          <head></head>
       </div>
       <jsp:include page="/footer.jsp" />
 
