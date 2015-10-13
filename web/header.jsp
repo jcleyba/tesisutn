@@ -43,7 +43,7 @@
         </ul>
         <%}else if(user != null){%>
         <ul id="dropdown1" class="dropdown-content">
-        <li><a href="misestadisticas.jsp">Mis Estadísticas</a></li>
+        <li><a href="/admin/misestadisticas.jsp">Mis Estadísticas</a></li>
         </ul>
         <%}%>
     </div>
