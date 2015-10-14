@@ -2,43 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd8b00f9-4e5a-4d3d-87b3-0bb54d78a062" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/listaResultados.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/WEB-INF/classes/DAO/ServicioTorneos.class" afterPath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/WEB-INF/classes/DAO/ServicioTorneos.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GolfTime/DAO/ServicioTorneos.class" afterPath="$PROJECT_DIR$/out/production/GolfTime/DAO/ServicioTorneos.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/WEB-INF/classes/Controller/TorneosController.class" afterPath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/WEB-INF/classes/Controller/TorneosController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GolfTime/Controller/TorneosController.class" afterPath="$PROJECT_DIR$/out/production/GolfTime/Controller/TorneosController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DAO/ServicioTorneos.java" afterPath="$PROJECT_DIR$/src/DAO/ServicioTorneos.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/TorneosController.java" afterPath="$PROJECT_DIR$/src/Controller/TorneosController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/agregarInscripcion.jsp" afterPath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/agregarInscripcion.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/club.jsp" afterPath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/club.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/club.jsp" afterPath="$PROJECT_DIR$/web/club.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/clubes.jsp" afterPath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/clubes.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/clubes.jsp" afterPath="$PROJECT_DIR$/web/clubes.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/footer.jsp" afterPath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/footer.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/footer.jsp" afterPath="$PROJECT_DIR$/web/footer.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/header.jsp" afterPath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/header.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/header.jsp" afterPath="$PROJECT_DIR$/web/header.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/html.jsp" afterPath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/html.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/html.jsp" afterPath="$PROJECT_DIR$/web/html.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/admin/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/admin/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/admin/index.jsp" afterPath="$PROJECT_DIR$/web/admin/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/logout.jsp" afterPath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/logout.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/logout.jsp" afterPath="$PROJECT_DIR$/web/logout.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/admin/misestadisticas.jsp" afterPath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/admin/misestadisticas.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/admin/misestadisticas.jsp" afterPath="$PROJECT_DIR$/web/admin/misestadisticas.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/resultados.jsp" afterPath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/resultados.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/resultados.jsp" afterPath="$PROJECT_DIR$/web/resultados.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/js/scripts.js" afterPath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/js/scripts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/scripts.js" afterPath="$PROJECT_DIR$/web/js/scripts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/css/style.css" afterPath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/style.css" afterPath="$PROJECT_DIR$/web/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/torneos.jsp" afterPath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/torneos.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/torneos.jsp" afterPath="$PROJECT_DIR$/web/torneos.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/usuario.jsp" afterPath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/usuario.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/usuario.jsp" afterPath="$PROJECT_DIR$/web/usuario.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GolfTime.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,21 +26,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/admin/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.708333">
-              <caret line="61" column="63" selection-start-line="61" selection-start-column="63" selection-end-line="61" selection-end-column="63" />
+            <state vertical-scroll-proportion="0.502551">
+              <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.75721157">
-              <caret line="43" column="18" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -198,7 +163,6 @@
         <option value="$PROJECT_DIR$/src/Controller/TorneosController.java" />
         <option value="$PROJECT_DIR$/src/DAO/ServicioTorneos.java" />
         <option value="$PROJECT_DIR$/web/js/scripts.js" />
-        <option value="$PROJECT_DIR$/web/admin/index.jsp" />
         <option value="$PROJECT_DIR$/web/listaResultados.jsp" />
         <option value="$PROJECT_DIR$/web/footer.jsp" />
         <option value="$PROJECT_DIR$/web/header.jsp" />
@@ -208,6 +172,7 @@
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/web/torneos.jsp" />
         <option value="$PROJECT_DIR$/web/css/style.css" />
+        <option value="$PROJECT_DIR$/web/admin/index.jsp" />
       </list>
     </option>
   </component>
@@ -823,12 +788,12 @@
       <workItem from="1444700474020" duration="1564000" />
       <workItem from="1444740814046" duration="2655000" />
       <workItem from="1444777350560" duration="9186000" />
-      <workItem from="1444828543124" duration="7742000" />
+      <workItem from="1444828543124" duration="8036000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55200000" />
+    <option name="totallyTimeSpent" value="55494000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="826" extended-state="6" />
@@ -1210,14 +1175,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/admin/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.708333">
-          <caret line="61" column="63" selection-start-line="61" selection-start-column="63" selection-end-line="61" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/resultados.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-18.75">
@@ -1303,8 +1260,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.75721157">
-          <caret line="43" column="18" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.502551">
+          <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
           <folding />
         </state>
       </provider>

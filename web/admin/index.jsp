@@ -41,7 +41,7 @@
         <jsp:include page="/html.jsp" />
           <body>
       <jsp:include page="/header.jsp" />
-       <h4 class="teal-text">Consola Administrador</h4>
+       <h4 class="teal-text">Panel Administrador de Club</h4>
         <div clasS="container">
              <div class="row">
             <div class="col s12">

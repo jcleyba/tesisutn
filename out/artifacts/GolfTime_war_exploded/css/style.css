@@ -9,16 +9,14 @@ and open the template in the editor.
 */
 body {
     background:url(/images/golf2c.png) no-repeat top center;
-    background-size: cover;
+    background-size: 100%;
 }
 nav {
     margin-bottom:80px;
-    
 }
 h4.teal-text {
     max-width: 70%;
     margin:20px auto;
-    
 }
 nav .brand-logo img{
     width: 55%;
