@@ -111,7 +111,7 @@ public class ServicioEstadisticas extends ServicioBase {
         return listaSalida;
     }
 
-    public ArrayList getEstadisticasPorMesPorClub(int idClub)
+    public ArrayList getEstadisticasPorMesPorClub(int idClub, int anio)
     {
 
         ArrayList listaSalida = new ArrayList();
@@ -124,7 +124,7 @@ public class ServicioEstadisticas extends ServicioBase {
                     "INNER JOIN (SELECT COUNT(IDINSCRIPCIONES) AS CANT_INSC, TORNEOS_IDTORNEOS \n" +
                     "            FROM inscripciones \n" +
                     "            GROUP BY TORNEOS_IDTORNEOS) AS I ON I.TORNEOS_IDTORNEOS = T.IDTORNEOS \n" +
-                    "WHERE T.CLUBES_IDCLUBES = "+idClub+" and YEAR(T.FECHA) = YEAR(CURDATE()) GROUP BY 1 order by 1 desc";
+                    "WHERE T.CLUBES_IDCLUBES = "+idClub+" and YEAR(T.FECHA) = "+anio+" GROUP BY 1 order by 1 desc";
             PreparedStatement st = con.prepareStatement(sql);
             st.executeQuery();
             PreparedStatement st2 = con.prepareStatement(sql2);
@@ -153,4 +153,95 @@ public class ServicioEstadisticas extends ServicioBase {
 
         return listaSalida;
     }
+
+    public ArrayList getEstadisticasPorMesPorClubTorneoAbierto(int idClub, int anio)
+    {
+
+        ArrayList listaSalida = new ArrayList();
+        try
+        {
+            abrirConexion();
+            String sql = "SELECT COUNT(IDTORNEOS), TIPOSTORNEO_IDTIPOSTORNEO FROM TORNEOS WHERE CLUBES_IDCLUBES = "+idClub+" AND YEAR(TORNEOS.FECHA) = "+anio+" GROUP BY 2";
+            PreparedStatement st = con.prepareStatement(sql);
+            ResultSet rs = st.executeQuery();
+            while(rs.next())
+            {
+                listaSalida.add(rs.getFloat(1));
+            }
+
+            rs.close();
+            st.close();
+        }
+        catch(Exception e)
+        {
+            System.out.println("Error al obtener estadísticas. Causa: " + e.getMessage());
+        }
+        finally
+        {
+            cerrarConexion();
+        }
+
+        return listaSalida;
+    }
+    public float getEstadisticasNoSocios(int idClub, int anio)
+    {
+
+        float salida = 0;
+        try
+        {
+            abrirConexion();
+            String sql = "SELECT COUNT(U.CLUBES_IDCLUBES) FROM INSCRIPCIONES INNER JOIN (SELECT * FROM TORNEOS WHERE CLUBES_IDCLUBES = "+idClub+" AND TIPOSTORNEO_IDTIPOSTORNEO = 1 ) AS I ON I.IDTORNEOS = TORNEOS_IDTORNEOS INNER JOIN JUGADORES J ON J.IDJUGADORES = INSCRIPCIONES.JUGADORES_IDJUGADORES INNER JOIN USUARIOS U ON U.IDUSUARIOS = J.USUARIOS_IDUSUARIOS WHERE U.CLUBES_IDCLUBES !="+idClub+" AND YEAR(I.FECHA) = "+anio;
+            PreparedStatement st = con.prepareStatement(sql);
+            ResultSet rs = st.executeQuery();
+            while(rs.next())
+            {
+                salida = rs.getFloat(1);
+            }
+
+            rs.close();
+            st.close();
+        }
+        catch(Exception e)
+        {
+            System.out.println("Error al obtener estadísticas. Causa: " + e.getMessage());
+        }
+        finally
+        {
+            cerrarConexion();
+        }
+
+        return salida;
+    }
+
+    public float getEstadisticasSocios(int idClub, int anio)
+    {
+
+        float salida = 0;
+        try
+        {
+            abrirConexion();
+            String sql = "SELECT COUNT(U.CLUBES_IDCLUBES) FROM INSCRIPCIONES INNER JOIN (SELECT * FROM TORNEOS WHERE CLUBES_IDCLUBES = 1 AND TIPOSTORNEO_IDTIPOSTORNEO = "+idClub+" ) AS I ON I.IDTORNEOS = TORNEOS_IDTORNEOS INNER JOIN JUGADORES J ON J.IDJUGADORES = INSCRIPCIONES.JUGADORES_IDJUGADORES INNER JOIN USUARIOS U ON U.IDUSUARIOS = J.USUARIOS_IDUSUARIOS WHERE U.CLUBES_IDCLUBES ="+idClub+" AND YEAR(I.FECHA) = "+anio;
+            PreparedStatement st = con.prepareStatement(sql);
+            ResultSet rs = st.executeQuery();
+            while(rs.next())
+            {
+                salida = rs.getFloat(1);
+            }
+
+            rs.close();
+            st.close();
+        }
+        catch(Exception e)
+        {
+            System.out.println("Error al obtener estadísticas. Causa: " + e.getMessage());
+        }
+        finally
+        {
+            cerrarConexion();
+        }
+
+        return salida;
+    }
 }
+
+

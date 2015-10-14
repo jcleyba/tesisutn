@@ -43,11 +43,31 @@ public class EstadisticasController {
         }
         return floatArray;
     }
-    public ArrayList estadisticasPorMesPorClub(int idClub)
+    public ArrayList estadisticasPorMesPorClub(int idClub, int anio)
     {
-        ArrayList listaMixta = servicio.getEstadisticasPorMesPorClub(idClub);
+        ArrayList listaMixta = servicio.getEstadisticasPorMesPorClub(idClub,anio);
 
         return listaMixta;
+    }
+
+    public float[] estadisticasTiposTorneosPorClub(int idClub,int anio)
+    {
+        ArrayList<Float> listaNumeral = servicio.getEstadisticasPorMesPorClubTorneoAbierto(idClub, anio);
+        float[] floatArray = new float[listaNumeral.size()];
+        int i = 0;
+
+        for (Float f : listaNumeral) {
+            floatArray[i++] = (f != null ? f : Float.NaN);
+        }
+        return floatArray;
+    }
+
+    public float[] estadisticasSociosyNoSocios(int idClub,int anio)
+    {
+        float socios = servicio.getEstadisticasSocios(idClub,anio);
+        float noSocios = servicio.getEstadisticasNoSocios(idClub,anio);
+        float [] array =  {socios,noSocios};
+        return array;
     }
 
 }
