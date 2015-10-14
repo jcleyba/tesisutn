@@ -6,16 +6,8 @@
 
 <%@page import="Controller.ResultadosController"%>
 <%@page import="Model.Resultado"%>
-<%@page import="Controller.TorneosController"%>
-<%@page import="Model.Torneo"%>
-<%@page import="Model.Administrador"%>
 <%@page import="Controller.UsuarioController"%>
-<%@page import="Model.Jugador"%>
-<%@page import="Model.Usuario"%>
-<%@page import="Controller.AdminController"%>
 <%@page import="java.util.List"%>
-<%@page import="Controller.ClubesController"%>
-<%@page import="Model.Club"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
  <% 
@@ -36,20 +28,20 @@
         <jsp:include page="/html.jsp" />
           <body>
       <jsp:include page="/header.jsp" />
-       <h4 class="teal-text">Resultados</h4>
+       <h4 class="teal-text">Resultados del torneo</h4>
         <div clasS="container">
-             <h4 >Resultado del Torneo</h4>
+
            <%if(isAdmin==true){%>
            <a href="imprimirResultados.jsp?idTorneo=<%=idTorneo%>" class=btn right"">Imprimir</a>
            <%}%>
              <div class="row">
     <div class="col s12">
       <ul class="tabs">
-        <li class="tab col s3"><a class="active" href="#scratch">Scratch</a></li>
-        <li class="tab col s3"><a  href="#0a9" class="">0 a 9</a></li>
-        <li class="tab col s3"><a  href="#10a16" class="">10 a 16</a></li>
-        <li class="tab col s3"><a  href="#17a24" class="">17 a 24</a></li>
-        <li class="tab col s3"><a  href="#25a36" class="">25 a 36</a></li>
+        <li class="tab col s3"><a  href="#scratch" class="active">Scratch</a></li>
+        <li class="tab col s3"><a  href="#cat0a9" class="">0 a 9</a></li>
+        <li class="tab col s3"><a  href="#cat10a16" class="">10 a 16</a></li>
+        <li class="tab col s3"><a  href="#cat17a24" class="">17 a 24</a></li>
+        <li class="tab col s3"><a  href="#cat25a36" class="">25 a 36</a></li>
       </ul>
     </div>
                         
@@ -87,7 +79,7 @@
         </tbody>
       </table>
     </div>
-    <div id="0a9" class="">
+    <div id="cat0a9" class="">
      
       <table class="bordered">
         <thead>
@@ -123,7 +115,7 @@
         </tbody>
       </table>
     </div>
-    <div id="10a16" class="">
+    <div id="cat10a16" class="">
      
       <table class="bordered">
         <thead>
@@ -159,7 +151,7 @@
         </tbody>
       </table>
     </div>     
-    <div id="17a24" class="">
+    <div id="cat17a24" class="">
      
       <table class="bordered">
         <thead>
@@ -184,7 +176,7 @@
             <td><%=item.getApellidoJugador()%></td>
             <td><%=item.getSumaHoyos()%></td>
             <td><%=item.getHandicap()%></td>
-            <td><%=item.getScoreNeto()%>   </td> 
+            <td><%=item.getScoreNeto()%>   </td>
                 <%if(isAdmin == true){%><td data-field="matricula">
                 <a href="/admin/editarResultado.jsp?idResultado=<%=item.getIdResultado()%>&idTorneo=<%=idTorneo%>" class="btn">Editar</a>
                    </td>
@@ -195,7 +187,7 @@
         </tbody>
       </table>
     </div>     
-    <div id="25a36" class="">
+    <div id="cat25a36" class="">
      
       <table class="bordered">
         <thead>
@@ -237,9 +229,7 @@
     
   </div>
                    <jsp:include page="/footer.jsp" />
-         <script type="text/javascript" src="/js/jquery.js"></script>
-      <script type="text/javascript" src="/js/materialize.min.js"></script>
-      <script type="text/javascript" src="/js/scripts.js"></script>
+
 
   </body>
 </html>

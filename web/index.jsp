@@ -25,7 +25,7 @@
   <body>
       <jsp:include page="header.jsp" />
       <h4 class="teal-text">Bienvenido a Golf Time</h4>
-      <div class="container">
+      <div class="container no-back">
           <p>En Golftime podrás consultar los horarios disponibles en cada torneo de tu club. Además de seguir tus propias estadísticas de resultados por torneo</p>
           <div class="row"> 
               <h5 class="col s5">Clubes</h5><div class="col s2" >&nbsp;</div><h5 class="col s5">Próximos torneos</h5>

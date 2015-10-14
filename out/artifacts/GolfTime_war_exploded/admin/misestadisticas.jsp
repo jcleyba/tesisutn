@@ -26,7 +26,7 @@
         EstadisticasController ec = new EstadisticasController();
         float[] array = ec.estadisticasGeneralesPorClub(idclub);
         ArrayList arrayPorMes = ec.estadisticasPorMesPorClub(idclub,anio);
-        float[] arrayTipos = ec.estadisticasTiposTorneosPorClub(idclub,anio);
+        float[] arrayTipos = ec.estadisticasTiposTorneosPorClub(idclub, anio);
         float[] arrayTorneosAbiertos = ec.estadisticasSociosyNoSocios(idclub, anio);
     %>
 <head>
@@ -143,7 +143,8 @@
           };
 
 
-      google.setOnLoadCallback(drawChart1());
+      google.setOnLoadCallback(cargarCharts());
+        google.setOnLoadCallback(drawChart2());
 
 
     </script>

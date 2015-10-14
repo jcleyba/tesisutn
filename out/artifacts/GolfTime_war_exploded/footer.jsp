@@ -16,8 +16,10 @@
               <div class="col l4 offset-l2 s12">
                 <h5 class="teal-text">Links</h5>
                 <ul>
+                  <li><a class="grey-text text-lighten-3" href="listaResultados.jsp">Resultados</a></li>
                   <li><a class="grey-text text-lighten-3" href="clubes.jsp">Clubes</a></li>
                   <li><a class="grey-text text-lighten-3" href="torneos.jsp">Torneos</a></li>
+
                 </ul>
               </div>
             </div>

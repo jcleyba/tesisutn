@@ -6,8 +6,6 @@
 
 <%@page import="Controller.EmailUtility"%>
 <%@page import="Model.Usuario"%>
-<%@page import="java.util.Date"%>
-<%@page import="java.text.SimpleDateFormat"%>
 <%@page import="Controller.TorneosController"%>
 <%@page import="Controller.UsuarioController"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -37,5 +35,7 @@
       <h4 class="teal-text">¡Felicitaciones!</h4>
       <div class="container">
           <p>Su inscripcion ha sido exitosa. En los próximos minutos recibirá un mail de confirmación de su inscripción. Adelante y suerte!.</p>
-      </div> 
-    </body>
+      </div>
+      <jsp:include page="/footer.jsp" />
+
+  </body>

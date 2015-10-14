@@ -106,9 +106,17 @@ public class TorneosController {
         ServicioTorneos st = new ServicioTorneos();
         listaTorneos = (ArrayList<Torneo>) st.getProximosTorneos();
         return listaTorneos;
-    } 
-      
-      public List<Torneo> listarProximosTorneosPorClub(int idClub)
+    }
+
+    public List<Torneo> listarTorneosPrevios()
+    {
+        ArrayList<Torneo> listaTorneos = new ArrayList();
+        ServicioTorneos st = new ServicioTorneos();
+        listaTorneos = (ArrayList<Torneo>) st.getTorneosJugados();
+        return listaTorneos;
+    }
+
+    public List<Torneo> listarProximosTorneosPorClub(int idClub)
     {
         ArrayList<Torneo> listaTorneos = new ArrayList();
         ServicioTorneos st = new ServicioTorneos();

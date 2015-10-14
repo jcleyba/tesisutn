@@ -20,7 +20,7 @@
   <body>
       <jsp:include page="header.jsp" />
       <h4 class="teal-text">Próximos torneos disponibles</h4>
-      <div class="container">
+      <div class="container no-back">
         <div class="row">
                 <% for(Torneo item:lista){%>
         <div class="col m6">
@@ -46,8 +46,5 @@
             </div>
           </div>
                 <jsp:include page="/footer.jsp" />
-      <script type="text/javascript" src="js/jquery.js"></script>
-       <script type="text/javascript" src="js/materialize.min.js"></script>
-      <script type="text/javascript" src="js/scripts.js"></script>   
   </body>
 </html>

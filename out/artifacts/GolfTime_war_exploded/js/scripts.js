@@ -12,6 +12,22 @@ $(document).ready(function() {
     selectYears: 15 // Creates a dropdown of 15 years to control year
   });   
   $(".dropdown-button").dropdown();
+    $("#dataTable,#dataTable1,#listaResultados").DataTable({
+        info:false,
+        searching: true,
+        "ordering": false,
+        paging: true,
+        "bFilter" : false,
+        "bLengthChange": false,
+        "oLanguage": {
+            "sSearch": "",
+            "oPaginate":
+            {"sNext":"Próximo",
+             "sPrevious":"Previo"
+            }
+        }
+    });
+    $("#dataTable_filter input,#dataTable1_filter input,#listaResultados_filter input").attr('placeholder','Buscar');
 });
 
 

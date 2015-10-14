@@ -124,7 +124,7 @@ public class ServicioTorneos extends ServicioBase{
         try
         {
           abrirConexion();
-          String sql = "SELECT idtorneos,t.nombre,t.fecha,tt.tipoDescripcion FROM torneos t,tiposTorneo tt where t.clubes_idclubes = "+idclub+" and idtiposTorneo = tiposTorneo_idtiposTorneo ORDER BY 3";
+          String sql = "SELECT idtorneos,t.nombre,t.fecha,tt.tipoDescripcion FROM torneos t,tiposTorneo tt where t.clubes_idclubes = "+idclub+" and idtiposTorneo = tiposTorneo_idtiposTorneo ORDER BY 3 DESC";
           PreparedStatement st = con.prepareStatement(sql);
           ResultSet rs = st.executeQuery();
           
@@ -188,6 +188,43 @@ public class ServicioTorneos extends ServicioBase{
             cerrarConexion();
         }
         
+        return lista;
+    }
+
+    public List<Torneo> getTorneosJugados()
+    {
+        ArrayList<Torneo> lista = new ArrayList();
+        try
+        {
+            abrirConexion();
+            String sql = "SELECT idtorneos,t.nombre,t.fecha,tt.tipoDescripcion,c.nombre FROM torneos t,tiposTorneo tt,clubes c where t.fecha <= CURDATE() and idtiposTorneo = tiposTorneo_idtiposTorneo and clubes_idclubes = idclubes order by 3 desc";
+            PreparedStatement st = con.prepareStatement(sql);
+            ResultSet rs = st.executeQuery();
+
+            while(rs.next())
+            {
+                Torneo t = new Torneo();
+                t.setIdTorneo(rs.getInt("idtorneos"));
+                t.setNombre(rs.getString("t.nombre"));
+                t.setFecha(rs.getString("t.fecha"));
+                t.setClub(rs.getString("c.nombre"));
+                t.setTipoDescripcion(rs.getString("tt.tipoDescripcion"));
+
+                lista.add(t);
+            }
+
+            rs.close();
+            st.close();
+        }
+        catch(Exception e)
+        {
+            System.out.println("Error al agregar el ingresar. Causa: " + e.getMessage());
+        }
+        finally
+        {
+            cerrarConexion();
+        }
+
         return lista;
     }
     

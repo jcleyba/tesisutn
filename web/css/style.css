@@ -39,11 +39,43 @@ footer .container {
     
 }
 
-.dropdown-button {
-    min-width:200px;
-    
+.container.no-back
+{
+    padding:25px 0;
+    background: none;
+    box-shadow: 0px 0px 0px;
 }
 .collection .collection-item {
     background-color: transparent !important;
 
+}
+
+a.paginate_button {
+    margin:10px;
+    display: inline-block;
+    padding: 5px;
+    color:#ccc;
+    cursor:pointer;
+}
+
+.paginate_button.disabled {
+    color:#ccc !important;
+    cursor:inherit !important;
+}
+.paginate_button.current,
+.paginate_button.next,
+.paginate_button.previous{
+    color:#039be5;
+}
+
+#scratch table tbody tr td:nth-child(3)
+{
+    background: #A6E0C3;
+    text-align: center;
+}
+
+#cat10a16 table tbody tr td:nth-child(5)
+{
+    background: #A6E0C3;
+    text-align: center;
 }

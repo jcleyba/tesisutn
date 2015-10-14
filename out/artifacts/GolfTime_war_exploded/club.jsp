@@ -27,9 +27,10 @@
       <jsp:include page="header.jsp" />
       <h4 class="teal-text">Bienvenido al sitio de <%=club.getNombre()%></h4>
       <div class="container">
-          <div>
+          <h5>Próximos Torneos</h5>
+          <div class="row">
                 <% for(Torneo item : listaTorneo){%>
-        <div class="col s4 m4">
+        <div class="col s6 m6">
           <div class="card">
            
             <div class="card-content">

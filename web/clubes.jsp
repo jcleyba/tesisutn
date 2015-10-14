@@ -19,7 +19,7 @@
   <body>
       <jsp:include page="header.jsp" />
       <h4 class="teal-text">Estos son los clubes que utilizan Golf Time</h4>
-      <div class="container">
+      <div class="container no-back">
        
         <div class="row">
         <% for(Club item:lista){%>

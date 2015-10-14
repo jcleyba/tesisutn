@@ -7,5 +7,5 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <% session.invalidate();
    request.setAttribute("usuario", null);
-   response.sendRedirect("/index.jsp");
+   response.sendRedirect("/");
 %>

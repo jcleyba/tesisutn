@@ -7,19 +7,18 @@
 <%@page import="Model.Club"%>
 <%@page import="Controller.ClubesController"%>
 <%@page import="Controller.UsuarioController"%>
-<%@page import="Model.Jugador"%>
 <%@page import="Model.Usuario"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <div class="navbar-fixed">
 <nav  class="teal">
     <div class="nav-wrapper">
       <a href="index.jsp" class="brand-logo center"><img src="/images/golftime.svg" alt="Logo"  title="Golftime"></a>
-      <ul id="nav-mobile" class="left hide-on-med-and-down">
+      <ul id="nav-mobile" class="left">
         <li><a href="/clubes.jsp" >Clubes</a></li>
         <li><a href="/torneos.jsp">Torneos</a></li>
-       
+          <li><a href="/listaResultados.jsp">Resultados</a></li>
       </ul>
-      <ul id="nav-mobile" class="right">
+      <ul id="nav-mobile" class="right m2">
           <% Usuario user = (Usuario)session.getAttribute("usuario");
               if( user != null){%>
               <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><%=(user.getUsername() != null)? user.getUsername() : "Admin" %><i class="material-icons right">arrow_drop_down</i></a></li>

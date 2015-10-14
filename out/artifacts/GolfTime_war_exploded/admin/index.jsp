@@ -50,13 +50,16 @@
                   <li class="tab col s3"><a  href="#admin" class="active">Torneos</a></li>
               </ul>
             </div>
+             </div>
+
+
             <div id="clubes" class="col s12">
-             <div id="" class="">
                  <br>
                  <br>
-             <a href="imprimirJugadores.jsp?idClub=<%=idclub%>" class="btn left">Imprimir Lista</a>
+                 <a href="imprimirJugadores.jsp?idClub=<%=idclub%>" class="btn left">Imprimir Lista</a>
                  <br>
-              <table class="bordered">
+                <br>
+              <table class="bordered" id="dataTable" data-page-length='10'>
                 <thead>
                   <tr>
                       <th data-field="apellido">Apellido</th>
@@ -78,7 +81,7 @@
                     <td><%if(item.getEstado() == 0){%>
                         <a href="activarJugador.jsp?id=<%=item.getIdJugador()%>" class="btn">Activar</a>
                     <%} else {%>
-                        <a href="desactivarJugador.jsp?id=<%=item.getIdJugador()%>" class="btn">Desactivar</a>
+                        <a href="desactivarJugador.jsp?id=<%=item.getIdJugador()%>" class="btn red">Desactivar</a>
                     <%}%>
                     </td>
                     <td> <a href="editarJugador.jsp?id=<%=item.getIdJugador()%>" class="btn">Editar</a></td>
@@ -88,13 +91,14 @@
                 </tbody>
               </table>
             </div>
-          </div>
-             </div>
+
      <div id="admin" class="col s12">
          <br>
-         <a href="nuevotorneo.jsp?id=<%=idclub%>" class="btn">Nuevo torneo</a>
          <br>
-         <table class="bordered">
+         <a href="nuevotorneo.jsp?id=<%=idclub%>" class="btn left">Nuevo torneo</a>
+         <br>
+         <br>
+         <table class="bordered" id="dataTable1">
         <thead>
           <tr>
               <th data-field="nombre">Nombre</th>
@@ -120,10 +124,10 @@
                 <a href="editarTorneo.jsp?id=<%=item.getIdTorneo()%>" class="btn">Editar</a>
             </td>
             <td>
-                <a href="cerrarTorneo.jsp?id=<%=item.getIdTorneo()%>" class="btn">Cerrar</a>
+                <a href="cerrarTorneo.jsp?id=<%=item.getIdTorneo()%>" class="btn red">Cerrar</a>
             </td>
             <td>
-                <a href="cargaResultados.jsp?idTorneo=<%=item.getIdTorneo()%>" class="btn">Cargar</a>
+                <a href="cargaResultados.jsp?idTorneo=<%=item.getIdTorneo()%>" class="btn blue-grey">Cargar</a>
             </td>
             </tr>
          <%}}%>
@@ -136,6 +140,7 @@
 
     
   </div>
-                   <jsp:include page="/footer.jsp" />
-  </body>
+      <jsp:include page="/footer.jsp" />
+      <script type="text/javascript" charset="utf8" src="http://cdn.datatables.net/1.10.9/js/jquery.dataTables.js"></script>
+    </body>
 </html>
