@@ -14,7 +14,8 @@ import javax.mail.internet.MimeMessage;
  *
  * @author juanleyba
  */
-public class EmailUtility {
+public class EmailUtility{
+
     public static void sendEmail(String toAddress,
             String subject, String message) throws AddressException,
             MessagingException {

@@ -96,7 +96,6 @@
       <div class="container" style="background-color: white">
           <div id="chart"></div>
           <div id="chart_div"></div>
-          <head></head>
       </div>
   <jsp:include page="/footer.jsp" />
 

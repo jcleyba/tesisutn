@@ -29,10 +29,12 @@
         mailing.sendEmail(toAddress, subject, message);
 
 %>
+<!DOCTYPE html>
+
  <%@include file="html.jsp" %>
   <body>
       <jsp:include page="header.jsp" />
-      <h4>¡Felicitaciones!</h4>
+      <h4 class="teal-text">¡Felicitaciones!</h4>
       <div class="container">
           <p>Su inscripcion ha sido exitosa. En los próximos minutos recibirá un mail de confirmación de su inscripción. Adelante y suerte!.</p>
       </div> 
