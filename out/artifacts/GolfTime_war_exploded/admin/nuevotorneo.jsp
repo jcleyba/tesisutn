@@ -11,6 +11,7 @@
 <%@page import="Model.Club"%>
 <%@page import="Controller.ClubesController"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
  <%@include file="/html.jsp" %>
    <% 
     TorneosController cc = new TorneosController();
@@ -34,7 +35,7 @@
         </div>
            <div class="input-field col s4">
           <input id="username" type="number" min="2" max="4" class="validate" required name="jugadoresTxt">
-          <label for="username">Cantidad jugadores por linea</label>
+          <label for="username">Jugadores por linea</label>
           <input type="text" value="<%= idClub %>" name="txtIdClub" hidden>
         </div>
       </div>
@@ -73,7 +74,5 @@
     </form>
       </div>
                     <jsp:include page="/footer.jsp" />
-     <script type="text/javascript" src="/js/jquery.js"></script>
-      <script type="text/javascript" src="/js/materialize.min.js"></script>
-      <script type="text/javascript" src="/js/scripts.js"></script>
+
     </body>

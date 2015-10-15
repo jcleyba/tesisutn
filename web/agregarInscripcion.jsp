@@ -8,23 +8,31 @@
 <%@page import="Model.Usuario"%>
 <%@page import="Controller.TorneosController"%>
 <%@page import="Controller.UsuarioController"%>
+<%@ page import="java.text.SimpleDateFormat" %>
+<%@ page import="java.util.Date" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%  
     String idJugador = request.getParameter("idjugadorTxt");  
     String idTorneo = request.getParameter("idtorneoTxt");
     String hora = request.getParameter("comboHorarios");
     TorneosController tc = new TorneosController();
+
     tc.agregarInscripcion(hora, idJugador, idTorneo);
-    
     UsuarioController uc = new UsuarioController();
     Usuario usuario = uc.getUsuarioPorIdJugador(Integer.parseInt(idJugador));
- 
+    SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy HH:mm");
 
-        String toAddress = usuario.getEmail();
+    Long milisec = Long.parseLong(hora);
+
+    String toAddress = usuario.getEmail();
+
+    Date horario = new Date(milisec);
+    String horafinal = formatter.format(horario);
         String subject = "Su inscripción ha sido exitosa";
-        String message = "Usted se ha inscripto para jugar a las "+hora;
+        String message = "Usted se ha inscripto para jugar en la siguiente fecha: "+horafinal;
         EmailUtility mailing = new EmailUtility();
         mailing.sendEmail(toAddress, subject, message);
+
 
 %>
 <!DOCTYPE html>

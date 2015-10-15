@@ -11,6 +11,7 @@
           <link type="text/css" rel="stylesheet" href="/css/materialize.min.css"  media="screen,projection"/>
           <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
           <link type="text/css" rel="stylesheet" href="/css/style.css"  media="screen,projection"/>
+        <link rel="icon" type="image/png" href="/images/favicon.png">
           <script type="text/javascript" src="/js/jsapi.js"></script>
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
