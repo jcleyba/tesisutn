@@ -24,37 +24,104 @@
     <%@include file="html.jsp" %>
   <body>
       <jsp:include page="header.jsp" />
-      <h4 class="teal-text">Bienvenido a Golf Time</h4>
-      <div class="container no-back">
-          <p>En Golftime podrás consultar los horarios disponibles en cada torneo de tu club. Además de seguir tus propias estadísticas de resultados por torneo</p>
-          <div class="row"> 
-              <h5 class="col s5">Clubes</h5><div class="col s2" >&nbsp;</div><h5 class="col s5">Próximos torneos</h5>
-                 <ul class="collection col s5">
-                      
-                   <%for(Club item : listaClubes){%>
-                    <li class="collection-item avatar">
-                      <img src="images/<%=item.getLogo()%>" alt="<%=item.getNombre()%>" class="circle">
-                      <span class="title teal-text"><%=item.getNombre()%></span>
-                      <p>
-                          <%=item.getDireccion()%><br>
-                          <%=item.getTelefono()%>
+      <div class="main-container">
+      <div id="main-title">
+          <h1 class="teal-text light">Bienvenido a Golftime</h1>
+      </div>
+      <div id="subtitle">
+          <h5 class="text-darken-1 blue-grey-text">En Golftime podrás consultar los horarios disponibles en cada torneo de tu club, inscribirte de manera online y seguir tus propios resultados y estadísticas de juego.</h5>
+      </div>
+      <div id="comenzar">
+
+          <a href="#loginForm" class="modal-trigger btn-large white teal-text"><i class="material-icons left teal-text">thumb_up</i>Comenzar</a>
+
+      </div>
+      <div class="row white center promo-wrapper">
+          <h3 class="teal-text light">La herramienta online para jugadores y clubes de golf</h3>
+          <div class="wrapper-col">
+              <div class="col s12 m4">
+                  <div class="center promo">
+                      <i class="large material-icons teal-text">done_all</i>
+                      <h5 class="promo-caption">Inscripciones Online</h5>
+                      <p class="light center">Inscribite al torneo que quieras y recibí la confirmación de tu inscripción. Podés anotarte y darte de baja sin moverte de tu casa o levantar el teléfono</p>
+                  </div>
+              </div>
+              <div class="col s12 m4">
+                  <div class="center promo">
+                      <i class="large material-icons teal-text">reorder</i>
+                      <h5 class="promo-caption">Resultados</h5>
+                      <p class="light center">
+                          Revisá tus score y el de tus amigos en los distintos torneos que te inscribiste con nuestra herramienta de resultados online.
                       </p>
-                      <a href="club.jsp?id=<%=item.getIdClub()%>" class="secondary-content"><i class="material-icons">play_arrow</i></a>
-                    </li>
-                     <%}%>
-                 </ul>
-                
-            <div class="col s2">&nbsp;</div>
-         <ul class="collection col s5">
-        
-        <%for(Torneo item : listaTorneos){%>
-        <li class="collection-item"><div><%=item.getNombre()%><a href="torneo.jsp?idTorneo=<%=item.getIdTorneo()%>" class="secondary-content"><i class="material-icons">send</i></a></div></li>
-                <%}%>
-      </ul>
-            
+                  </div>
+              </div>
+              <div class="col s12 m4">
+                  <div class="center promo">
+                      <i class="large material-icons teal-text">equalizer</i>
+                      <h5 class="promo-caption">Estadísticas</h5>
+                      <p class="light center">
+                          Analizá la evolución de tus resultados, tu handicap y los torneos que disputaste a través de las estadísticas personales que brinda Golftime.
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+          <div class="row">
+              <div class="wrapper-col">
+              <h3 class="center white-text light">Próximos torneos</h3>
+              <% for(Torneo item:listaTorneos){%>
+              <div class="col m6">
+                  <div class="card">
+
+                      <div class="card-content">
+                          <span class="card-title"> <a href="torneo.jsp?idTorneo=<%=item.getIdTorneo()%>"><%=item.getNombre()%> - (<%=item.getTipoDescripcion()%>)</a></span>
+                          <p id="fecha">
+                              <%= tc.fechaOrdenada(item.getFecha())%>
+                          </p>
+                          <p class="teal-text">
+                              <%=item.getClub()%>
+                          </p>
+                      </div>
+                      <div class="card-action">
+                          <a href="torneo.jsp?idTorneo=<%=item.getIdTorneo()%>">Ver Horarios</a>
+                          <a href="resultados.jsp?idTorneo=<%=item.getIdTorneo()%>">Ver resultados</a>
+
+                      </div>
+                  </div>
+              </div>
+              <%}%>
+                  </div>
+          </div>
+            <div class="row center blue darken-2">
+                <div class="wrapper-col">
+                <h4 class="white-text light">
+                    Si tu club no utiliza Golftime, solicitá que nos contacten y disfrutá de nuestro sistema desde tu computadora.
+                </h4>
+                    </div>
             </div>
-          
-          
+
+          <div class="row">
+              <div class="wrapper-col">
+              <h3 class="center light white-text">Consultá torneos y resultados</h3>
+              <% for(Club item:listaClubes){%>
+              <div class="col s4 m4">
+                  <div class="card">
+                      <img class="circle responsive-img" src="/images/<%=item.getLogo() %>" alt="<%=item.getNombre()%>" title="<%=item.getNombre()%>"/>
+
+                      <div class="card-content">
+                          <span class="card-title"> <a href="club.jsp?id=<%=item.getIdClub()%>"><%=item.getNombre()%></a></span>
+
+                      </div>
+                      <div class="card-action">
+                          <a href="club.jsp?id=<%=item.getIdClub()%>">Ver torneos</a>
+                      </div>
+                  </div>
+              </div>
+              <%}%>
+          </div>
+         </div>
       </div>
             <jsp:include page="/footer.jsp" />
 

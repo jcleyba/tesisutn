@@ -8,8 +8,9 @@ and open the template in the editor.
     Author     : juanleyba
 */
 body {
-    background:url(/images/golf2c.png) no-repeat top center;
+    background:url(/images/golf2c.png) no-repeat top center fixed;
     background-size: 100%;
+
 }
 nav {
     margin-bottom:80px;
@@ -76,4 +77,149 @@ a.paginate_button {
 {
     background: #A6E0C3;
     text-align: center;
+}
+
+#main-title,#subtitle,#comenzar
+{
+    text-align: center;
+    padding-top:30px;
+    max-width: 70%;
+    margin:4% auto;
+    position: relative;
+}
+
+.main-container .row {
+    padding: 8% 0;
+}
+
+.wrapper-col
+{
+    max-width: 70%;
+    margin: auto;
+}
+.promo-wrapper {
+    padding: 45px 0 65px 0;
+}
+.promo i {
+    margin: 40px 0;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+    /* animaciones */
+
+
+
+
+#main-title {
+
+    -webkit-animation: slideIn;
+    -moz-animation: slideIn;
+    -o-animation: slideIn;
+    animation: slideIn;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+}
+@-webkit-keyframes slideIn {
+    0% {
+        left: 30%;
+        opacity: 0;
+    }
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+@-moz-keyframes slideIn {
+    0% {
+        left: 30%;
+        opacity: 0;
+    }
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+@-o-keyframes slideIn {
+    0% {
+        left: 30%;
+        opacity: 0;
+    }
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+@keyframes slideIn {
+    0% {
+        left: 30%;
+        opacity: 0;
+    }
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+#subtitle{
+
+    -webkit-animation: slideInner;
+    -moz-animation: slideInner;
+    -o-animation: slideInner;
+    animation: slideInner;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+}
+@-webkit-keyframes slideInner {
+    0% {
+        right: 30%;
+        opacity: 0;
+    }
+    100% {
+        right: 0;
+        opacity: 1;
+    }
+}
+@-moz-keyframes slideInner {
+    0% {
+        right: 30%;
+        opacity: 0;
+    }
+    100% {
+        right: 0;
+        opacity: 1;
+    }
+}
+@-o-keyframes slideInner {
+    0% {
+        right: 30%;
+        opacity: 0;
+    }
+    100% {
+        right: 0;
+        opacity: 1;
+    }
+}
+@keyframes slideInner {
+    0% {
+        right: 30%;
+        opacity: 0;
+    }
+    100% {
+        right: 0;
+        opacity: 1;
+    }
 }

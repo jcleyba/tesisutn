@@ -9,7 +9,7 @@
 <%@page import="Controller.UsuarioController"%>
 <%@page import="Model.Usuario"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<div class="navbar-fixed">
+<div class="navbar">
 <nav  class="teal">
     <div class="nav-wrapper">
       <a href="index.jsp" class="brand-logo center"><img src="/images/golftime.svg" alt="Logo"  title="Golftime"></a>

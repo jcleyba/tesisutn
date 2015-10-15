@@ -25,9 +25,9 @@
 <%@include file="html.jsp" %>
   <body>
       <jsp:include page="header.jsp" />
-      <h4 class="teal-text">Bienvenido al sitio de <%=club.getNombre()%></h4>
-      <div class="container">
-          <h5>Próximos Torneos</h5>
+      <h4 class="teal-text">Próximos torneos en <%=club.getNombre()%></h4>
+      <div class="container no-back">
+
           <div class="row">
                 <% for(Torneo item : listaTorneo){%>
         <div class="col s6 m6">
