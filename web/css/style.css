@@ -105,7 +105,11 @@ a.paginate_button {
     display: block;
 }
 
-
+.card-action a
+{
+    line-height: 24px;
+    vertical-align: top;
+}
 
 
 

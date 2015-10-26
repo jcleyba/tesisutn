@@ -68,7 +68,7 @@
             <tr>
             <td><%=item.getNombreJugador()%></td>
             <td><%=item.getApellidoJugador()%></td>
-            <td><%=item.getScoreNeto()%></td>
+            <td class="teal lighten-4 center"><%=item.getScoreNeto()%></td>
             <%if(isAdmin == true){%><td data-field="matricula">
                 <a href="/admin/editarResultado.jsp?idResultado=<%=item.getIdResultado()%>&idTorneo=<%=idTorneo%>" class="btn">Editar</a>
                    </td>
@@ -104,7 +104,7 @@
             <td><%=item.getApellidoJugador()%></td>
             <td><%=item.getSumaHoyos()%></td>
             <td class="teal-text"><%=item.getHandicap()%></td>
-            <td class=""><%=item.getScoreNeto()%>   </td> 
+            <td class="teal lighten-4 center"><%=item.getScoreNeto()%>   </td>
                 <%if(isAdmin == true){%><td data-field="matricula">
                 <a href="/admin/editarResultado.jsp?idResultado=<%=item.getIdResultado()%>&idTorneo=<%=idTorneo%>" class="btn">Editar</a>
                    </td>
@@ -139,8 +139,8 @@
             <td><%=item.getNombreJugador()%></td>
             <td><%=item.getApellidoJugador()%></td>
             <td><%=item.getSumaHoyos()%></td>
-            <td><%=item.getHandicap()%></td>
-            <td><%=item.getScoreNeto()%>   </td> 
+            <td class="teal-text"><%=item.getHandicap()%></td>
+            <td class="teal lighten-4 center"><%=item.getScoreNeto()%>   </td>
                 <%if(isAdmin == true){%><td data-field="matricula">
                 <a href="/admin/editarResultado.jsp?idResultado=<%=item.getIdResultado()%>&idTorneo=<%=idTorneo%>" class="btn">Editar</a>
                    </td>
@@ -175,8 +175,8 @@
             <td><%=item.getNombreJugador()%></td>
             <td><%=item.getApellidoJugador()%></td>
             <td><%=item.getSumaHoyos()%></td>
-            <td><%=item.getHandicap()%></td>
-            <td><%=item.getScoreNeto()%>   </td>
+            <td class="teal-text"><%=item.getHandicap()%></td>
+            <td class="teal lighten-4 center"><%=item.getScoreNeto()%>   </td>
                 <%if(isAdmin == true){%><td data-field="matricula">
                 <a href="/admin/editarResultado.jsp?idResultado=<%=item.getIdResultado()%>&idTorneo=<%=idTorneo%>" class="btn">Editar</a>
                    </td>
@@ -211,8 +211,8 @@
             <td><%=item.getNombreJugador()%></td>
             <td><%=item.getApellidoJugador()%></td>
             <td><%=item.getSumaHoyos()%></td>
-            <td><%=item.getHandicap()%></td>
-            <td><%=item.getScoreNeto()%>    </td>
+            <td class="teal-text"><%=item.getHandicap()%></td>
+            <td class="teal lighten-4 center"><%=item.getScoreNeto()%>    </td>
                 <%if(isAdmin == true){%><td data-field="matricula">
                 <a href="/admin/editarResultado.jsp?idResultado=<%=item.getIdResultado()%>&idTorneo=<%=idTorneo%>" class="btn">Editar</a>
                    </td>

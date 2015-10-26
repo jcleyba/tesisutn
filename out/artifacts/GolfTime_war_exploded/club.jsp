@@ -38,8 +38,8 @@
                 <p id="fecha"> <%= tc.fechaOrdenada(item.getFecha())%></p>
             </div>
             <div class="card-action">
-               <a href="torneo.jsp?idTorneo=<%=item.getIdTorneo()%>">Ver Horarios</a>
-              <a href="resultados.jsp?idTorneo=<%=item.getIdTorneo()%>">Ver resultados</a>
+                <i class="material-icons orange-text text-lighten-2">access_time</i><a href="torneo.jsp?idTorneo=<%=item.getIdTorneo()%>"> Ver Horarios</a>
+                <i class="material-icons orange-text text-lighten-2">poll</i> <a href="resultados.jsp?idTorneo=<%=item.getIdTorneo()%>">Ver resultados</a>
 
             </div>
           </div>
