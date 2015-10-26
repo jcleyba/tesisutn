@@ -153,9 +153,7 @@
           </div>
     </div>
                     <jsp:include page="/footer.jsp" />
-         <script type="text/javascript" src="/js/jquery.js"></script>
-      <script type="text/javascript" src="/js/materialize.min.js"></script>
-      <script type="text/javascript" src="/js/scripts.js"></script>
+
       <script>
           var password = document.getElementById("password")
                   , confirm_password = document.getElementById("passwordRepeat");

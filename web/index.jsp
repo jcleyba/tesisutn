@@ -17,7 +17,7 @@
     ClubesController cc = new ClubesController();
     TorneosController tc = new TorneosController();
     List<Club> listaClubes = cc.listarClubesActivos();
-    List<Torneo> listaTorneos = tc.listarProximosTorneos();
+    List<Torneo> listaTorneos = tc.listarProximosTorneos().subList(0,6);
 %>
 <!DOCTYPE html>
 <html>
@@ -70,7 +70,7 @@
 
           <div class="row">
               <div class="wrapper-col">
-              <h3 class="center white-text light">Próximos torneos</h3>
+              <h3 class="center light grey-text text-darken-3">Próximos torneos</h3>
               <% for(Torneo item:listaTorneos){%>
               <div class="col m6">
                   <div class="card">
@@ -104,7 +104,7 @@
 
           <div class="row">
               <div class="wrapper-col">
-              <h3 class="center light white-text">Consultá torneos y resultados</h3>
+              <h3 class="center light grey-text text-darken-3">Consultá torneos y resultados</h3>
               <% for(Club item:listaClubes){%>
               <div class="col s4 m4">
                   <div class="card">

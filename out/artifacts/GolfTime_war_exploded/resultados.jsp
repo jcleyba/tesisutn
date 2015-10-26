@@ -68,7 +68,7 @@
             <tr>
             <td><%=item.getNombreJugador()%></td>
             <td><%=item.getApellidoJugador()%></td>
-            <td><%=item.getSumaHoyos()%></td>
+            <td><%=item.getScoreNeto()%></td>
             <%if(isAdmin == true){%><td data-field="matricula">
                 <a href="/admin/editarResultado.jsp?idResultado=<%=item.getIdResultado()%>&idTorneo=<%=idTorneo%>" class="btn">Editar</a>
                    </td>

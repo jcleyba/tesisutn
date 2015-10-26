@@ -78,7 +78,7 @@
         <h4 class="center-align">Registrarme</h4>
         <% 
     ClubesController cc = new ClubesController();
-    List<Club> lista = cc.listarClubes();
+    List<Club> lista = cc.listarClubesActivos();
     %>
        <div class="row">
            <form class="col s12" method="POST" action="/registrarUsuario.jsp">
