@@ -67,10 +67,18 @@
              </div>
              <div class="row center-align">
                 <div class="input-field col s12">
-                    <input type="submit" value="Enviar" class="btn ">
+                    <button class="btn waves-effect waves-light" type="submit" name="action">Enviar
+                        <i class="material-icons right">send</i>
+                    </button>
                 </div>
               </div>
     </form>
+       <p class="center"><a href="/recuperoUsuario.jsp" >Olvidé mi nombre de usuario</a>
+           <br>
+           <br>
+           <a href="/recuperoContraseña.jsp">Olvidé mi contraseña</a>
+       </p>
+
     </div>
   </div>
 <div id="singupForm" class="modal modal-fixed-footer">

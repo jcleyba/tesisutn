@@ -288,4 +288,39 @@ public class ServicioJugadores extends ServicioBase {
             cerrarConexion();
         }
     }
+
+    public Usuario usuarioPorEmail (String email)
+    {
+        Usuario user = new Usuario();
+        try
+        {
+            abrirConexion();
+            String sql = "SELECT idusuarios,username, password, email,clubes_idclubes FROM usuarios where email = '"+email+"'";
+            PreparedStatement st = con.prepareStatement(sql);
+            ResultSet rs = st.executeQuery(sql);
+            if(rs.next())
+            {
+                user.setIdUsuario(rs.getInt("idusuarios"));
+                user.setUsername(rs.getString("username"));
+                user.setPassword(rs.getString("password"));
+                user.setEmail(rs.getString("email"));
+                user.setIdClub(rs.getInt("clubes_idclubes"));
+            }
+            else {
+                user = null;
+            }
+            rs.close();
+            st.close();
+        }
+        catch(Exception e)
+        {
+            System.out.println("Error al agregar el ingresar. Causa: " + e.getMessage());
+        }
+        finally
+        {
+            cerrarConexion();
+        }
+
+        return user;
+    }
 }

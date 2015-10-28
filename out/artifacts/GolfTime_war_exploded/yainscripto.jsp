@@ -12,12 +12,12 @@
       <jsp:include page="header.jsp" />
       <h4 class="teal-text">Inscripción existente</h4>
       <div class="container">
-          <p class="red-text">Usted ya se ha inscripto al torneo seleccionado.</p>
-          <a href="index.jsp" class="btn">Volver a inicio</a>
+          <p class="red-text">Usted ya se ha inscripto al torneo seleccionado. Recuerde que una vez cancelada su inscripción, no puede volver a anotarse en el mismo torneo.</p>
+
+          <p class="center"><i class="material-icons teal-text large">thumb_down</i> </p>
+          <p class="center"><button onclick="history.go(-1)" class="btn">Volver al torneo</button></p>
       </div>
              <jsp:include page="/footer.jsp" />
-      <script type="text/javascript" src="js/jquery.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
-      <script type="text/javascript" src="js/scripts.js"></script>
+
     </body>
     </html>

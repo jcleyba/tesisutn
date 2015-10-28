@@ -12,8 +12,8 @@
       <jsp:include page="header.jsp" />
       <h4 class="teal-text">Revise sus credenciales</h4>
       <div class="container">
-          <p class="red-text">Por favor vuelva a intentar iniciar sesión.</p>
-            <h4 class="center-align">Iniciar Sesión</h4>
+          <p class="red-text">El nombre de usuario y la contraseña no coinciden. Por favor vuelva a intentar iniciar sesión.</p>
+
      <form action="/login.jsp" method="GET" class="col s12">
             <div class="row">
                     <div class="input-field col s12">
@@ -35,8 +35,5 @@
     </form>
       </div>
              <jsp:include page="/footer.jsp" />
-      <script type="text/javascript" src="js/jquery.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
-      <script type="text/javascript" src="js/scripts.js"></script>
     </body>
     </html>
