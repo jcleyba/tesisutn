@@ -10,7 +10,7 @@
     <%@include file="html.jsp" %>
   <body>
       <jsp:include page="header.jsp" />
-      <h4 class="teal-text">Olvidé mi contraseña</h4>
+      <h4 class="teal-text">Olvidé mi nombre de usuario</h4>
       <div class="container">
           <p class="red-text">Para recuperar su nombre de usuario, por favor ingrese su dirección de correo electrónico.</p>
 

@@ -10,15 +10,15 @@
     <%@include file="html.jsp" %>
   <body>
       <jsp:include page="header.jsp" />
-      <h4 class="teal-text">Olvidé mi nombre de usuario</h4>
+      <h4 class="teal-text">Olvidé mi contraseña</h4>
       <div class="container">
-          <p class="red-text">Para recuperar su nombre de usuario, por favor ingrese su dirección de correo electrónico.</p>
+          <p class="red-text">Para recuperar su contraseña, por favor ingrese su nombre de usuario de Golftime.</p>
 
-     <form action="/recuperoUsuario" method="GET" class="col s12">
+     <form action="/recuperoPass" method="POST" class="col s12">
             <div class="row">
                     <div class="input-field col s12">
-                      <input id="email" type="email" class="validate" required name="txtEmail">
-                      <label for="email">Email</label>
+                      <input id="username" type="text" class="validate" required name="txtUsername">
+                      <label for="username">Nombre de usuario</label>
                     </div>
             </div>
 
@@ -30,7 +30,6 @@
                 </div>
               </div>
     </form>
-          <div id="no-email"></div>
       </div>
              <jsp:include page="/footer.jsp" />
     </body>

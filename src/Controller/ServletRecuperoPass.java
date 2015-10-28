@@ -9,29 +9,29 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.*;
+import java.io.IOException;
+import java.io.PrintWriter;
 
 /**
  * Created by juancruzleyba on 10/28/15.
  */
-@WebServlet(name = "ServletRecuperoUsuario", urlPatterns = {"/recuperoUsuario"})
-public class ServletRecuperoUsuario extends HttpServlet {
-
+@WebServlet(name = "ServletRecuperoPass", urlPatterns = {"/recuperoPass"})
+public class ServletRecuperoPass extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
     {
         PrintWriter out = response.getWriter();
         response.setContentType("text/html");
 
         ServicioJugadores ser = new ServicioJugadores();
-        String mail = request.getParameter("txtEmail");
-        Usuario user = ser.usuarioPorEmail(mail);
+        String username = request.getParameter("txtUsername");
+        Usuario user = ser.passwordPorUsuario(username);
 
 
         if(user != null)
         {
             String toAddress = user.getEmail();
             String subject = "Recupero usuario Golftime";
-            String message = "Estimado usuario de Golftime, su nombre de usuario es: " + user.getUsername();
+            String message = "Estimado usuario de Golftime:\nSu contraseña  es: " + user.getPassword()+"\n\nPor razones de seguridad elimine este correo electrónico o modifique su contraseña al ingresar nuevamente al sistema. \n\n Equipo de Golftime";
 
 
             EmailUtility composer = new EmailUtility();
@@ -48,7 +48,7 @@ public class ServletRecuperoUsuario extends HttpServlet {
         }
         else
         {
-            out.println("<script>alert('Su email no es correcto por favor vuelva a ingresarlo');window.location.href='/recuperoUsuario.jsp'</script>");
+            out.println("<script>alert('Su nombre de usuario no es correcto por favor vuelva a ingresarlo');window.location.href='/recuperoUsuario.jsp'</script>");
         }
     }
 
