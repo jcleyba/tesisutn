@@ -11,6 +11,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <div class="navbar">
 <nav  class="teal">
+
     <div class="nav-wrapper">
       <a href="index.jsp" class="brand-logo center"><img src="/images/golftime.svg" alt="Logo"  title="Golftime"></a>
       <ul id="nav-mobile" class="left">
@@ -55,8 +56,8 @@
      <form action="/login.jsp" method="GET" class="col s12">
             <div class="row">
                     <div class="input-field col s12">
-                      <input id="username" type="text" class="validate" required name="txtUserName">
-                      <label for="username">Usuario</label>
+                      <input id="username-input" type="text" class="validate" required name="txtUserName">
+                      <label for="username-input">Usuario</label>
                     </div>
             </div>
              <div class="row">
@@ -81,7 +82,7 @@
     List<Club> lista = cc.listarClubesActivos();
     %>
        <div class="row">
-           <form class="col s12" method="POST" action="/registrarUsuario.jsp">
+           <form class="col s12" method="POST" action="/">
       <div class="row">
         <div class="input-field col s4">
           <input id="first_name" type="text" class="validate" required name="nombreTxt">
@@ -99,18 +100,19 @@
 
       <div class="row">
         <div class="input-field col s6">
-          <input id="password" type="password" class="validate" required name="passwordTxt">
+            <input id="password" name="password" type="password" name="passwordTxt" class="required" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Debe tener al menos seis caracteres' : ''); if(this.checkValidity()) form.password_two.pattern = this.value;" placeholder="Password" required>
           <label for="password">Contraseña</label>
         </div>
            <div class="input-field col s6">
-          <input id="passwordRepeat" type="password" class="validate" required>
-          <label for="passwordRepeat">Repetir Contraseña</label>
+               <input id="passwordRepeat" class="validate" name="password_two" type="password" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Sus contraseñas no coinciden' : '');" placeholder="Repita su contraseña" required>
+               <label for="passwordRepeat">Repetir Contraseña</label>
         </div>
+
       </div>
       <div class="row">
         <div class="input-field col s6">
-          <input id="email" type="email" class="validate" required name="emailTxt">
-          <label for="email">Email</label>
+          <input id="email-input" type="email" class="validate" required name="emailTxt">
+          <label for="email-input">Email</label>
         </div>
            <div class="input-field col s6">
           <input id="email" type="text" class="validate" required name="matriculaTxt">
