@@ -53,7 +53,7 @@
         </div>
            <div class="input-field col s4">
                <input id="username" type="number" min="2" max="4" class="validate" value='<%=torneo.getJugadoresPorLinea()%>' required name="jugadoresTxt">
-          <label for="username">Cantidad jugadores por linea</label>
+          <label for="username" class="active">Cantidad jugadores por linea</label>
           <input type="text" value="<%= torneo.getIdClub() %>" name="txtIdClub" hidden>
         </div>
       </div>

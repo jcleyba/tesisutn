@@ -66,7 +66,6 @@
                       <th data-field="nombre">Nombre</th>
                       <th data-field="matricula">Matricula</th>
                       <th data-field="matricula">Activar</th>
-                      <th data-field="matricula">Editar</th>
                   </tr>
                 </thead>
 
@@ -84,7 +83,6 @@
                         <a href="desactivarJugador.jsp?id=<%=item.getIdJugador()%>" class="btn red">Desactivar</a>
                     <%}%>
                     </td>
-                    <td> <a href="editarJugador.jsp?id=<%=item.getIdJugador()%>" class="btn">Editar</a></td>
                     </tr>
                  <%}}%>
 

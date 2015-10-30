@@ -54,7 +54,7 @@
      <form action="/login.jsp" method="GET" class="col s12">
             <div class="row">
                     <div class="input-field col s12">
-                      <input id="username" type="text" class="validate" required name="txtUserName">
+                      <input id="username" type="text" pattern="[^'\x22]+" class="validate" required name="txtUserName">
                       <label for="username">Usuario</label>
                     </div>
             </div>

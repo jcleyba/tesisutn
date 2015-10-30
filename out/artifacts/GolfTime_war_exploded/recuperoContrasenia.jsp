@@ -14,10 +14,10 @@
       <div class="container">
           <p class="red-text">Para recuperar su contraseña, por favor ingrese su nombre de usuario de Golftime.</p>
 
-     <form action="/recuperoPass" method="GET" class="col s12">
+     <form action="/recuperoPass" method="POST" class="col s12">
             <div class="row">
                     <div class="input-field col s12">
-                      <input id="username" type="text" class="validate" required name="txtUsername">
+                      <input id="username" type="text" pattern="[^'\x22]+" class="validate" required name="txtUsername">
                       <label for="username">Nombre de usuario</label>
                     </div>
             </div>

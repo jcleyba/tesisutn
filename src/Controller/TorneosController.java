@@ -211,29 +211,48 @@ public class TorneosController {
         return listaHorarios;
     }
     
-    public boolean posibleInscribirse(Torneo t, Usuario user)
+    public int posibleInscribirse(Torneo t, Usuario user)
     {
-        boolean posible = false;
-        if(user != null){
-        
+        int codigo = 200;
+
+        ServicioJugadores sj = new ServicioJugadores();
         int tipoTorneo = t.getTipoTorneo();
-        int idClubUsuario = user.getIdClub();
-        int idClubTorneo = t.getIdClub();
-        
-        if(tipoTorneo == 2){
-            posible = false;
+
+        int estado = 1;
+
+
+        if(user == null)
+        {
+            codigo = 400;
+
         }
-        else if(tipoTorneo == 1){
-            posible = true;
+        else
+        {
+            estado  = sj.jugadorPorIdUsuario(user.getIdUsuario()).getEstado();
+            if(estado == 0)
+            {
+                codigo = 401;
+            }
+            else if(tipoTorneo == 1)
+            {
+                codigo = 200;
+            }
+            else if(tipoTorneo == 3 && user.getIdClub() == t.getIdClub())
+            {
+                codigo = 200;
+            }
+            else if(tipoTorneo == 3 && user.getIdClub() != t.getIdClub())
+            {
+                codigo = 402;
+            }
+            else if(tipoTorneo == 2)
+            {
+                codigo = 403;
+            }
+
         }
-        else if(tipoTorneo == 3 && idClubUsuario == idClubTorneo){
-            posible = true;
-        }
-        else {
-            posible = false;
-        }
-        }
-        return posible;
+
+        return codigo;
     }
     
     public void actualizarTorneo(int idTorneo,String nombre, String fecha, int jugadores,int intervalo, int idclub,int tipo,String horainicio, String horacierre)

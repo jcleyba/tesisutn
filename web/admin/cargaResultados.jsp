@@ -18,6 +18,8 @@
 <%@page import="Model.Club"%>
 <%@page import="Controller.ClubesController"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
  <%@include file="/html.jsp" %>
    <% 
    
@@ -150,7 +152,6 @@
     </form>
       </div>
                     <jsp:include page="/footer.jsp" />
-     <script type="text/javascript" src="/js/jquery.js"></script>
-      <script type="text/javascript" src="/js/materialize.min.js"></script>
-      <script type="text/javascript" src="/js/scripts.js"></script>
+
     </body>
+</html>

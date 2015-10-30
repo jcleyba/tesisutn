@@ -121,7 +121,7 @@ public class ServicioJugadores extends ServicioBase {
         try
         {
           abrirConexion();
-          String sql = "SELECT idjugadores,nombre,apellido,matricula,estado FROM jugadores,usuarios where idusuarios = usuarios_idusuarios and clubes_idclubes ="+idClub+" order by 3";
+          String sql = "SELECT idjugadores,nombre,apellido,matricula,estado FROM jugadores,usuarios where idusuarios = usuarios_idusuarios and clubes_idclubes ="+idClub+" order by 5,3";
           PreparedStatement st = con.prepareStatement(sql);
           ResultSet rs = st.executeQuery();
           

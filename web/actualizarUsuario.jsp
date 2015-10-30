@@ -5,6 +5,7 @@
 --%>
 
 <%@page import="Controller.UsuarioController"%>
+<%@ page import="Model.Usuario" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <% 
     int idUsuario = Integer.parseInt(request.getParameter("id"));
@@ -19,6 +20,10 @@
     int matricula = Integer.parseInt(request.getParameter("matriculaTxt"));  
     int club = Integer.parseInt(request.getParameter("comboClubes"));
     uc.actualizarJugador(idUsuario,nom,ape,matricula,user,pass,email,club);
+
+    Usuario us = uc.loginJugador(user,pass);
+    session.setAttribute("usuario", us);
+
     response.sendRedirect("index.jsp");
 %>
  <%@include file="html.jsp" %>
@@ -36,7 +41,7 @@
      <form action="/login.jsp" method="GET" class="col s12">
             <div class="row">
                     <div class="input-field col s12">
-                      <input id="username" type="text" class="validate" required name="txtUserName">
+                      <input id="username" type="text" pattern="[^'\x22]+" class="validate" required name="txtUserName">
                       <label for="username">Usuario</label>
                     </div>
             </div>

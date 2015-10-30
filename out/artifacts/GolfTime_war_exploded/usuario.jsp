@@ -37,36 +37,37 @@
            <form class="col s12" method="POST" action="actualizarUsuario.jsp?id=<%=user.getIdUsuario()%>">
       <div class="row">
         <div class="input-field col s4">
-            <input id="first_name" type="text" class="validate" value='<%=j.getNombre()%>' required name="nombreTxt">
-          <label for="first_name">Nombre</label>
+            <input id="first_name" type="text" pattern="[^'\x22]+" class="validate" value='<%=j.getNombre()%>' required name="nombreTxt">
+          <label for="first_name" class="active">Nombre</label>
         </div>
         <div class="input-field col s4">
-          <input id="last_name" type="text" class="validate" value='<%=j.getApellido()%>' required name="apellidoTxt">
-          <label for="last_name">Apellido</label>
+          <input id="last_name" type="text" pattern="[^'\x22]+"   class="validate" value='<%=j.getApellido()%>' required name="apellidoTxt">
+          <label for="last_name" class="active">Apellido</label>
         </div>
            <div class="input-field col s4">
-          <input id="username" type="text" class="validate" value="<%=user.getUsername()%>" required name="usernameTxt">
-          <label for="username">Nombre de usuario</label>
+          <input id="username" type="text"  pattern="[^'\x22]+"  class="validate" value="<%=user.getUsername()%>" required name="usernameTxt">
+          <label for="username" class="active">Nombre de usuario</label>
         </div>
       </div>
 
                <div class="row">
                    <div class="input-field col s6">
-                       <input id="password" name="password" type="password" name="passwordTxt" class="required" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Debe tener al menos seis caracteres' : ''); if(this.checkValidity()) form.password_two.pattern = this.value;" required>          <label for="password">Contraseña</label>
+                       <input id="password" type="password" name="passwordTxt" class="required" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Debe tener al menos seis caracteres' : ''); if(this.checkValidity()) form.password_two.pattern = this.value;" required>          <label for="password">Contraseña</label>
+                       <label for="password"  class="active">Contraseña</label>
                    </div>
                    <div class="input-field col s6">
                        <input id="passwordRepeat" class="validate" name="password_two" type="password" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Sus contraseñas no coinciden' : '');"  required>
-                       <label for="passwordRepeat">Repetir Contraseña</label>
+                       <label for="passwordRepeat"  class="active">Repetir Contraseña</label>
                    </div>
                </div>
       <div class="row">
         <div class="input-field col s6">
           <input id="email" type="email" class="validate" value="<%=user.getEmail()%>" required name="emailTxt">
-          <label for="email">Email</label>
+          <label for="email"  class="active">Email</label>
         </div>
            <div class="input-field col s6">
-          <input id="email" type="text" class="validate" required value='<%=j.getMatricula()%>' name="matriculaTxt">
-          <label for="email">Matricula</label>
+          <input id="email" type="text"  pattern="[^'\x22]+" class="validate" required value='<%=j.getMatricula()%>' name="matriculaTxt">
+          <label for="email"  class="active">Matricula</label>
         </div>
         <div class="row"> 
             <select name="comboClubes" class="col s12" required>

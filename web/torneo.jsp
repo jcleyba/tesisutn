@@ -45,39 +45,24 @@
          <% 
             Object o = session.getAttribute("usuario");
             boolean isAdmin = uc.isAdmin(o);
-         if(isAdmin == false){   
-            Usuario usuario = (Usuario)session.getAttribute("usuario");
-            boolean posible = cc.posibleInscribirse(torneo, usuario);
-            int estado = 0;
-            
-            if(usuario != null){
-                Jugador jug =  uc.getJugador(usuario.getIdUsuario());
-                estado = jug.getEstado();
-            }
-            if(estado == 1){ 
-                if(usuario != null && posible){       
-            %>
-            <a href="inscribirme.jsp?idTorneo=<%=idTorneo%>" class="btn">Inscribirme</a>
-            
-                
-                
-           <%  }else if(usuario == null){%>
-            
-             <div>Para inscribirse debe iniciar sesión.</div>
-        
-     
-        <%}else if(usuario != null && !posible){%>
-             <div>El torneo está cerrado o es sólo para socios.</div>
-         
-         
-         <%}else {%>
-                 <div>El torneo está cerrado o es sólo para socios.</div>
-            <%}}else{%>
-            
-            <div>Su cuenta aún no ha sido activada</div>
-            <%}}else {%>
-            <a href="imprimirHorarios.jsp?idTorneo=<%=idTorneo%>" class="btn right">Imprimir</a>
-            <%}%>
+         if(isAdmin == false) {
+             Usuario usuario = (Usuario) session.getAttribute("usuario");
+             int respuestaPosible = cc.posibleInscribirse(torneo, usuario);
+
+             switch (respuestaPosible)
+             {
+                case 200:%> <a href="inscribirme.jsp?idTorneo=<%=idTorneo%>" class="btn">Inscribirme</a><%;break;
+                case 400:%> <div>Para inscribirse debe iniciar sesión.</div><%;break;
+                case 401:%> <div>Su cuenta aún no ha sido activada</div><%;break;
+                case 402:%> <div>El torneo está cerrado o es sólo para socios.</div><%;break;
+                case 403:%>  <div>El torneo está cerrado o es sólo para socios.</div><%;break;
+             }
+
+         }else{%>
+          <a href="imprimirHorarios.jsp?idTorneo=<%=idTorneo%>" class="btn right">Imprimir</a>
+          <%}%>
+
+
       <div id="horarios">
        <table class="bordered">
         <thead>

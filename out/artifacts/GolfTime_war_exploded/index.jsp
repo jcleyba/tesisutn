@@ -32,9 +32,10 @@
           <h5 class="text-darken-1 blue-grey-text">En Golftime podrás consultar los horarios disponibles en cada torneo de tu club, inscribirte de manera online y seguir tus propios resultados y estadísticas de juego.</h5>
       </div>
       <div id="comenzar">
-
-          <a href="#loginForm" class="modal-trigger btn-large white teal-text"><i class="material-icons left teal-text">thumb_up</i>Comenzar</a>
-
+        <%if(user == null){%>
+          <a href="#singupForm" class="modal-trigger btn-large white teal-text"><i class="material-icons left teal-text">person_add</i>Comenzar</a>
+          <a href="#loginForm" class="modal-trigger btn-large  blue white-text"><i class="material-icons left white-text">thumb_up</i>Iniciar sesión</a>
+        <%}%>
       </div>
       <div class="row white center promo-wrapper">
           <h3 class="teal-text light">La herramienta online para jugadores y clubes de golf</h3>

@@ -11,11 +11,11 @@
 <%@page import="java.util.Date"%>
 <%@page import="java.util.List"%>
 <%@page import="Controller.TorneosController"%>
-<%@page import="Model.Club"%>
-<%@page import="Controller.ClubesController"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-    <%@include file="/html.jsp" %>
-   
+
+<!DOCTYPE html>
+<html>
+<%@include file="/html.jsp" %>
   <body>
       <jsp:include page="/header.jsp" />
        <% 
@@ -26,7 +26,7 @@
         Usuario user = (Usuario)session.getAttribute("usuario");
         UsuarioController uc = new UsuarioController();
         Jugador jugador = uc.getJugador(user.getIdUsuario());
-        boolean posible = cc.posibleInscribirse(torneo, user);
+        int posible = cc.posibleInscribirse(torneo, user);
         boolean inscripto = cc.inscripto(idTorneo, jugador.getIdJugador());
         
         if(inscripto == true){
@@ -36,7 +36,7 @@
        %>
       <h4 class="teal-text">Inscribirme al torneo "<%= torneo.getNombre()%>"</h4>
       <div class="container">
-          <%if(user != null && posible){%>
+          <%if(user != null && posible == 200){%>
           <form action="agregarInscripcion.jsp" method="POST" class="col s12">
             <div class="row">
              

@@ -19,6 +19,7 @@
     TorneosController tc = new TorneosController();
     Torneo torneo = tc.getTorneoPorId(Integer.parseInt(idTorneo));
     boolean limitealcanzado = tc.limitePorLinea(Integer.parseInt(idTorneo),hora);
+    boolean inscripto = tc.inscripto(Integer.parseInt(idTorneo),Integer.parseInt(idJugador));
     if(limitealcanzado)
     {%>
 <!DOCTYPE html>
@@ -36,8 +37,8 @@
 
 </body>
     <%}
-    else{
-    //tc.agregarInscripcion(hora, idJugador, idTorneo);
+    else if(!inscripto){
+    tc.agregarInscripcion(hora, idJugador, idTorneo);
     UsuarioController uc = new UsuarioController();
     Usuario usuario = uc.getUsuarioPorIdJugador(Integer.parseInt(idJugador));
     SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy HH:mm");
@@ -63,8 +64,13 @@
       <h4 class="teal-text">¡Felicitaciones!</h4>
       <div class="container">
           <p>Su inscripcion ha sido exitosa. En los próximos minutos recibirá un mail de confirmación de su inscripción. Adelante y suerte!.</p>
+          <p class="center"><i class="material-icons teal-text large">thumb_up</i> </p>
+          <p class="center"><a href="/torneos.jsp" class="btn">Volver a torneos</a></p>
       </div>
       <jsp:include page="/footer.jsp" />
 
   </body>
-<%}%>
+<%} else
+{
+    response.sendRedirect("yainscripto.jsp");
+}%>
