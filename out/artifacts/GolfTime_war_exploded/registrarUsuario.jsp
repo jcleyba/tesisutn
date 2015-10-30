@@ -18,16 +18,25 @@
     
     int matricula = Integer.parseInt(request.getParameter("matriculaTxt"));  
     int club = Integer.parseInt(request.getParameter("comboClubes"));
-    uc.agregarJugador(user,pass,club,email,matricula,nom,ape);
-    
-    
-    
 
-    String toAddress = uc.getEmailAdmin(club);
-    String subject = "Se ha registrado un nuevo usuario";
-    String message = "Bienvenido a Golftime \n Active al usuario "+nom+" "+ape+" cuyo email es: "+email+".\n Gracias.";
-    EmailUtility mailing = new EmailUtility();
-    mailing.sendEmail(toAddress, subject, message);
+    Integer codigo = uc.errorPorUsuarioRegistrado(user,email);
+    if(codigo == 101)
+    {
+        response.sendRedirect("/usuarioExistente.jsp");
+    }
+    else if( codigo == 102)
+    {
+        response.sendRedirect("/emailRegistrado.jsp");
+    }
+    else
+    {
+        uc.agregarJugador(user,pass,club,email,matricula,nom,ape);
+        String toAddress = uc.getEmailAdmin(club);
+        String subject = "Se ha registrado un nuevo usuario";
+        String message = "Bienvenido a Golftime \n Active al usuario "+nom+" "+ape+" cuyo email es: "+email+".\n Gracias.";
+        EmailUtility mailing = new EmailUtility();
+        mailing.sendEmail(toAddress, subject, message);
+    }
     
 %>
  <%@include file="html.jsp" %>

@@ -100,4 +100,28 @@ public class UsuarioController {
          ServicioAdministrador sa = new ServicioAdministrador();
          return sa.getAdminEmail(idClub);
      }
+
+    public Integer errorPorUsuarioRegistrado(String username, String email)
+    {
+        Integer codigo = 0;
+        ServicioJugadores sj = new ServicioJugadores();
+
+        Usuario porUserName = sj.passwordPorUsuario(username);
+        Usuario porEmail = sj.usuarioPorEmail(email);
+
+        if(porUserName != null)
+        {
+            codigo = 101;
+        }
+        else if(porEmail != null)
+        {
+            codigo = 102;
+        }
+        else
+        {
+            codigo = 200;
+        }
+
+        return codigo;
+    }
 }

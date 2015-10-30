@@ -10,14 +10,34 @@
 <%@page import="Controller.UsuarioController"%>
 <%@ page import="java.text.SimpleDateFormat" %>
 <%@ page import="java.util.Date" %>
+<%@ page import="Model.Torneo" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%  
     String idJugador = request.getParameter("idjugadorTxt");  
     String idTorneo = request.getParameter("idtorneoTxt");
     String hora = request.getParameter("comboHorarios");
     TorneosController tc = new TorneosController();
+    Torneo torneo = tc.getTorneoPorId(Integer.parseInt(idTorneo));
+    boolean limitealcanzado = tc.limitePorLinea(Integer.parseInt(idTorneo),hora);
+    if(limitealcanzado)
+    {%>
+<!DOCTYPE html>
 
-    tc.agregarInscripcion(hora, idJugador, idTorneo);
+<%@include file="html.jsp" %>
+<body>
+<jsp:include page="header.jsp" />
+<h4 class="teal-text">¡Lo sentimos!</h4>
+<div class="container">
+    <p class="text-red">El límite de <%=torneo.getJugadoresPorLinea()%> jugadores por línea impuesto por el club ha sido alcanzado para este torneo en este horario. Elija otro horario disponible o consulte al club organizador.</p>
+    <p class="center"><i class="material-icons teal-text large">thumb_down</i> </p>
+    <p class="center"><a href="/torneo.jsp?idTorneo=<%=idTorneo%>" class="btn">Volver al torneo</a></p>
+</div>
+<jsp:include page="/footer.jsp" />
+
+</body>
+    <%}
+    else{
+    //tc.agregarInscripcion(hora, idJugador, idTorneo);
     UsuarioController uc = new UsuarioController();
     Usuario usuario = uc.getUsuarioPorIdJugador(Integer.parseInt(idJugador));
     SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy HH:mm");
@@ -47,3 +67,4 @@
       <jsp:include page="/footer.jsp" />
 
   </body>
+<%}%>

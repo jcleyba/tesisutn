@@ -112,8 +112,11 @@ a.paginate_button {
 }
 
 
+.dropdown-content
+{
+    min-width: 175px;
 
-
+}
 
 
 

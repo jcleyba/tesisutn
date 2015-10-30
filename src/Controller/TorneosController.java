@@ -354,4 +354,33 @@ public class TorneosController {
         return listaTTT;
                 
     }
+
+    public boolean limitePorLinea(int idTorneo, String horario)
+    {
+        boolean limiteAlcanzad = false;
+
+        long segundos = Long.parseLong(horario);
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+        Date hora = new Date(segundos);
+        String horafinal = formatter.format(hora);
+
+        ServicioInscripciones si = new ServicioInscripciones();
+        ServicioTorneos st = new ServicioTorneos();
+
+        Torneo torneo = st.getTorneoPorId(idTorneo);
+
+        List<Inscripcion> inscripcions = si.limitePorLinea(idTorneo,horafinal);
+
+        if(inscripcions.size()>=torneo.getJugadoresPorLinea())
+        {
+            limiteAlcanzad = true;
+        }
+        else
+        {
+            limiteAlcanzad = false;
+        }
+
+        return limiteAlcanzad;
+
+    }
 }

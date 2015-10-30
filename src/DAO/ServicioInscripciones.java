@@ -214,4 +214,36 @@ public class ServicioInscripciones extends ServicioBase{
         
         return lista;
     }
+
+    public List<Inscripcion> limitePorLinea(int idTorneo,String fecha)
+    {
+        ArrayList<Inscripcion> lista = new ArrayList();
+
+        try
+        {
+            abrirConexion();
+            String sql = "SELECT idinscripciones,hora_inicio from inscripciones where torneos_idtorneos = "+idTorneo+" and hora_inicio = '"+fecha+"'";
+            PreparedStatement st = con.prepareStatement(sql);
+            ResultSet rs = st.executeQuery();
+            while(rs.next())
+            {
+                Inscripcion in = new Inscripcion();
+                in.setIdInscripcion(rs.getInt("idinscripciones"));
+                in.setHoraInicio(rs.getString("hora_inicio"));
+
+                lista.add(in);
+            }
+
+            st.close();
+        }
+        catch(Exception e)
+        {
+            System.out.println("Error al agregar el usuario. Causa: " + e.getMessage());
+        }
+        finally
+        {
+            cerrarConexion();
+        }
+        return lista;
+    }
 }

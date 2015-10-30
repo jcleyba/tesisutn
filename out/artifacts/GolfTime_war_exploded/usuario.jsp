@@ -50,16 +50,15 @@
         </div>
       </div>
 
-      <div class="row">
-        <div class="input-field col s6">
-          <input id="password" type="password" class="validate" required name="passwordTxt">
-          <label for="password">Contraseña</label>
-        </div>
-           <div class="input-field col s6">
-          <input id="password" type="password" class="validate" required>
-          <label for="password">Repetir Contraseña</label>
-        </div>
-      </div>
+               <div class="row">
+                   <div class="input-field col s6">
+                       <input id="password" name="password" type="password" name="passwordTxt" class="required" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Debe tener al menos seis caracteres' : ''); if(this.checkValidity()) form.password_two.pattern = this.value;" required>          <label for="password">Contraseña</label>
+                   </div>
+                   <div class="input-field col s6">
+                       <input id="passwordRepeat" class="validate" name="password_two" type="password" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Sus contraseñas no coinciden' : '');"  required>
+                       <label for="passwordRepeat">Repetir Contraseña</label>
+                   </div>
+               </div>
       <div class="row">
         <div class="input-field col s6">
           <input id="email" type="email" class="validate" value="<%=user.getEmail()%>" required name="emailTxt">
