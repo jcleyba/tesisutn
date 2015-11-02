@@ -120,7 +120,7 @@
             <label for="email-input">Email</label>
         </div>
            <div class="input-field col s6">
-          <input id="email" type="text" class="validate" required name="matriculaTxt">
+          <input id="email" type="number" class="validate" min="0" max="1000000" step="1"  title="Ingrese su número de matricula" required name="matriculaTxt">
           <label for="email">Matricula</label>
         </div>
         <div class="row"> 

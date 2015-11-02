@@ -109,8 +109,9 @@
               <% for(Club item:listaClubes){%>
               <div class="col s4 m4">
                   <div class="card">
+                      <div class="card-image">
                       <img class="circle responsive-img" src="/images/<%=item.getLogo() %>" alt="<%=item.getNombre()%>" title="<%=item.getNombre()%>"/>
-
+                      </div>
                       <div class="card-content">
                           <span class="card-title"> <a href="club.jsp?id=<%=item.getIdClub()%>"><%=item.getNombre()%></a></span>
 

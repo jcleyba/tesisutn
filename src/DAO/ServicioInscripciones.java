@@ -10,8 +10,10 @@ import Model.Jugador;
 import Model.Torneo;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Date;
 
 /**
  *
@@ -82,7 +84,7 @@ public class ServicioInscripciones extends ServicioBase{
         try
         {
           abrirConexion();
-          String sql = "SELECT t.idtorneos,T.NOMBRE,T.FECHA,C.NOMBRE, IDINSCRIPCIONES FROM TORNEOS T, INSCRIPCIONES I, JUGADORES J, CLUBES C WHERE T.IDTORNEOS=I.TORNEOS_IDTORNEOS AND T.CLUBES_IDCLUBES = C.IDCLUBES AND I.JUGADORES_IDJUGADORES = J.IDJUGADORES AND J.USUARIOS_IDUSUARIOS = "+idUsuario+" and i.estado = 1 GROUP BY IDINSCRIPCIONES"; 
+          String sql = "SELECT t.idtorneos,T.NOMBRE,T.FECHA,C.NOMBRE, IDINSCRIPCIONES FROM TORNEOS T, INSCRIPCIONES I, JUGADORES J, CLUBES C WHERE T.IDTORNEOS=I.TORNEOS_IDTORNEOS AND T.CLUBES_IDCLUBES = C.IDCLUBES AND I.JUGADORES_IDJUGADORES = J.IDJUGADORES AND J.USUARIOS_IDUSUARIOS = "+idUsuario+" and i.estado = 1 AND T.FECHA >= CURDATE() GROUP BY IDINSCRIPCIONES ORDER BY 3 DESC";
           PreparedStatement st = con.prepareStatement(sql);
           ResultSet rs = st.executeQuery();
           
@@ -245,5 +247,27 @@ public class ServicioInscripciones extends ServicioBase{
             cerrarConexion();
         }
         return lista;
+    }
+
+    public void editarInscripcion(String hora_inicio,int idTorneo, int idJugador)
+    {
+
+        ResultSet rs = null;
+        try
+        {
+            abrirConexion();
+            String sql = "UPDATE inscripciones SET hora_inicio = '"+hora_inicio+"' where jugadores_idjugadores = "+idJugador+" and 	torneos_idtorneos = "+idTorneo;
+            PreparedStatement st = con.prepareStatement(sql);
+            st.executeUpdate();
+            st.close();
+        }
+        catch(Exception e)
+        {
+            System.out.println("Error al agregar el usuario. Causa: " + e.getMessage());
+        }
+        finally
+        {
+            cerrarConexion();
+        }
     }
 }

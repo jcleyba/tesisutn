@@ -226,10 +226,18 @@ public class TorneosController {
             codigo = 400;
 
         }
+
         else
         {
-            estado  = sj.jugadorPorIdUsuario(user.getIdUsuario()).getEstado();
-            if(estado == 0)
+            Jugador jugador = sj.jugadorPorIdUsuario(user.getIdUsuario());
+            boolean inscripto = inscripto(t.getIdTorneo(), jugador.getIdJugador());
+            estado  = jugador.getEstado();
+            if(inscripto)
+            {
+                codigo = 404;
+            }
+
+            else if(estado == 0)
             {
                 codigo = 401;
             }
@@ -401,5 +409,18 @@ public class TorneosController {
 
         return limiteAlcanzad;
 
+    }
+
+    public void updateInscripcion(String hora, String idJugador, String idTorneo)
+    {
+        int idjugador = Integer.parseInt(idJugador);
+        int idtorneo = Integer.parseInt(idTorneo);
+        long segundos = Long.parseLong(hora);
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+        Date hora_fecha = new Date(segundos);
+        String horafinal = formatter.format(hora_fecha);
+
+        ServicioInscripciones si = new ServicioInscripciones();
+        si.editarInscripcion(horafinal,idtorneo,idjugador);
     }
 }

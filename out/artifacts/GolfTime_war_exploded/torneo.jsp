@@ -26,7 +26,7 @@
         List<Date> listaHorarios = cc.calcularHorariosPorTorneo(idTorneo);
         Torneo torneo = cc.getTorneoPorId(idTorneo);
         UsuarioController uc = new UsuarioController();
-        
+
         int idUsuario = 0;
         
         int idClub = torneo.getIdClub();
@@ -44,9 +44,11 @@
           <h3>"<%=torneo.getNombre()%>" - (<%=mensaje%>)</h3>
          <% 
             Object o = session.getAttribute("usuario");
+             
             boolean isAdmin = uc.isAdmin(o);
          if(isAdmin == false) {
              Usuario usuario = (Usuario) session.getAttribute("usuario");
+
              int respuestaPosible = cc.posibleInscribirse(torneo, usuario);
 
              switch (respuestaPosible)
@@ -56,6 +58,7 @@
                 case 401:%> <div>Su cuenta aún no ha sido activada</div><%;break;
                 case 402:%> <div>El torneo está cerrado o es sólo para socios.</div><%;break;
                 case 403:%>  <div>El torneo está cerrado o es sólo para socios.</div><%;break;
+                case 404:%>  <div>Usted ya está inscripto en este torneo. Si desea cambiar su horario, utilice la opción 'Mis Inscripciones'.</div><%;break;
              }
 
          }else{%>

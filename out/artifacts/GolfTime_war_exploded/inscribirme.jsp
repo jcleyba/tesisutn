@@ -27,16 +27,13 @@
         UsuarioController uc = new UsuarioController();
         Jugador jugador = uc.getJugador(user.getIdUsuario());
         int posible = cc.posibleInscribirse(torneo, user);
-        boolean inscripto = cc.inscripto(idTorneo, jugador.getIdJugador());
-        
-        if(inscripto == true){
-            response.sendRedirect("yainscripto.jsp");
-        }
+
+
         
        %>
       <h4 class="teal-text">Inscribirme al torneo "<%= torneo.getNombre()%>"</h4>
       <div class="container">
-          <%if(user != null && posible == 200){%>
+          <%if(user != null && posible == 200 || posible == 404){%>
           <form action="agregarInscripcion.jsp" method="POST" class="col s12">
             <div class="row">
              

@@ -34,7 +34,7 @@
       <h4 class="teal-text">Inscribirme al torneo "<%= torneo.getNombre()%>"</h4>
       <div class="container">
           <%if(user != null && posible == 200 || posible == 404){%>
-          <form action="agregarInscripcion.jsp" method="POST" class="col s12">
+          <form action="updateInscripcion.jsp" method="POST" class="col s12">
             <div class="row">
              
               <div class="input-field col s3">

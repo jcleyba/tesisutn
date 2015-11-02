@@ -277,7 +277,7 @@ public class ServicioTorneos extends ServicioBase{
           
           while(rs.next())
           {          
-            t.setIdClub(rs.getInt("idtorneos"));
+            t.setIdTorneo(rs.getInt("idtorneos"));
             t.setNombre(rs.getString("t.nombre"));
             t.setFecha(rs.getString("t.fecha"));
             t.setIntervalo(rs.getInt("t.intervalos_idintervalos"));

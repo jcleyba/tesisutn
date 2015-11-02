@@ -66,7 +66,7 @@
           <label for="email"  class="active">Email</label>
         </div>
            <div class="input-field col s6">
-          <input id="email" type="text"  pattern="[^'\x22]+" class="validate" required value='<%=j.getMatricula()%>' name="matriculaTxt">
+          <input id="email" type="text"  pattern="[^'\x22]+" class="validate" min="0" max="1000000" step="1" title="Ingrese su número de matricula" required value='<%=j.getMatricula()%>' name="matriculaTxt">
           <label for="email"  class="active">Matricula</label>
         </div>
         <div class="row"> 
