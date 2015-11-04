@@ -48,7 +48,7 @@ public class ServletRecuperoPass extends HttpServlet {
         }
         else
         {
-            out.println("<script>alert('Su nombre de usuario no es correcto por favor vuelva a ingresarlo');window.location.href='/recuperoUsuario.jsp'</script>");
+            out.println("<script>alert('Su nombre de usuario no es correcto por favor vuelva a ingresarlo');window.location.href='/recuperoContrasenia.jsp'</script>");
         }
     }
 

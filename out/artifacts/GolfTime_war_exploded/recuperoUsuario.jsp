@@ -14,7 +14,7 @@
       <div class="container">
           <p class="red-text">Para recuperar su nombre de usuario, por favor ingrese su dirección de correo electrónico.</p>
 
-     <form action="/recuperoUsuario" method="GET" class="col s12">
+     <form action="/recuperoUsuario" method="POST" class="col s12">
             <div class="row">
                     <div class="input-field col s12">
                       <input id="email" type="email" class="validate" required name="txtEmail">
