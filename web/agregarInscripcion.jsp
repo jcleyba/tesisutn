@@ -50,7 +50,7 @@
     Date horario = new Date(milisec);
     String horafinal = formatter.format(horario);
         String subject = "Su inscripción ha sido exitosa";
-        String message = "Usted se ha inscripto para jugar en la siguiente fecha: "+horafinal;
+        String message = "Estimado usuario:\n \nUsted se ha inscripto para jugar en la siguiente fecha: "+horafinal+".\n \nEquipo de Golftime.";
         EmailUtility mailing = new EmailUtility();
         mailing.sendEmail(toAddress, subject, message);
 

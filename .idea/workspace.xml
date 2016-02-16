@@ -2,29 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd8b00f9-4e5a-4d3d-87b3-0bb54d78a062" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/editarInscripcion.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/updateInscripcion.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/WEB-INF/classes/DAO/ServicioTorneos.class" afterPath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/WEB-INF/classes/DAO/ServicioTorneos.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GolfTime/DAO/ServicioTorneos.class" afterPath="$PROJECT_DIR$/out/production/GolfTime/DAO/ServicioTorneos.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/WEB-INF/classes/Controller/TorneosController.class" afterPath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/WEB-INF/classes/Controller/TorneosController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GolfTime/Controller/TorneosController.class" afterPath="$PROJECT_DIR$/out/production/GolfTime/Controller/TorneosController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DAO/ServicioInscripciones.java" afterPath="$PROJECT_DIR$/src/DAO/ServicioInscripciones.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DAO/ServicioTorneos.java" afterPath="$PROJECT_DIR$/src/DAO/ServicioTorneos.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/TorneosController.java" afterPath="$PROJECT_DIR$/src/Controller/TorneosController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/header.jsp" afterPath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/header.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/header.jsp" afterPath="$PROJECT_DIR$/web/header.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/inscribirme.jsp" afterPath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/inscribirme.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/inscribirme.jsp" afterPath="$PROJECT_DIR$/web/inscribirme.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/misinscripciones.jsp" afterPath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/misinscripciones.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/misinscripciones.jsp" afterPath="$PROJECT_DIR$/web/misinscripciones.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/registrarUsuario.jsp" afterPath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/registrarUsuario.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/actualizarUsuario.jsp" afterPath="$PROJECT_DIR$/web/actualizarUsuario.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/agregarInscripcion.jsp" afterPath="$PROJECT_DIR$/web/agregarInscripcion.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/admin/agregarResultado.jsp" afterPath="$PROJECT_DIR$/web/admin/agregarResultado.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/admin/editarResultado.jsp" afterPath="$PROJECT_DIR$/web/admin/editarResultado.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/admin/misestadisticas.jsp" afterPath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/admin/misestadisticas.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/admin/misestadisticas.jsp" afterPath="$PROJECT_DIR$/web/admin/misestadisticas.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/registrarUsuario.jsp" afterPath="$PROJECT_DIR$/web/registrarUsuario.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/style.css" afterPath="$PROJECT_DIR$/web/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/torneo.jsp" afterPath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/torneo.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/torneo.jsp" afterPath="$PROJECT_DIR$/web/torneo.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/usuario.jsp" afterPath="$PROJECT_DIR$/out/artifacts/GolfTime_war_exploded/usuario.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/usuario.jsp" afterPath="$PROJECT_DIR$/web/usuario.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/admin/updateResultado.jsp" afterPath="$PROJECT_DIR$/web/admin/updateResultado.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GolfTime.iws" />
@@ -48,74 +33,82 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="header.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/header.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.5">
-              <caret line="122" column="80" selection-start-line="122" selection-start-column="66" selection-end-line="122" selection-end-column="80" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="misinscripciones.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/misinscripciones.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.67341775">
-              <caret line="49" column="46" selection-start-line="49" selection-start-column="46" selection-end-line="49" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="agregarInscripcion.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/agregarInscripcion.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.958333">
-              <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+            <state vertical-scroll-proportion="-6.5833335">
+              <caret line="61" column="8" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TorneosController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/TorneosController.java">
+      <file leaf-file-name="agregarResultado.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/admin/agregarResultado.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="215" column="0" selection-start-line="215" selection-start-column="0" selection-end-line="215" selection-end-column="0" />
+            <state vertical-scroll-proportion="-13.458333">
+              <caret line="55" column="62" selection-start-line="55" selection-start-column="62" selection-end-line="55" selection-end-column="62" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ServicioInscripciones.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DAO/ServicioInscripciones.java">
+      <file leaf-file-name="editarResultado.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/admin/editarResultado.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="86" column="342" selection-start-line="86" selection-start-column="342" selection-end-line="86" selection-end-column="342" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1446474540000" expanded="true" signature="705:926" placeholder="INSERT INTO ..." />
-                <marker date="1446474540000" expanded="true" signature="1480:1699" placeholder="SELECT idjug..inscripciones..." />
-                <marker date="1446474540000" expanded="true" signature="2643:2985" placeholder="SELECT t.idt..TORNEOS..." />
-                <marker date="1446474540000" expanded="true" signature="2643:2996" placeholder="SELECT t.idt..TORNEOS..." />
-                <marker date="1446474540000" expanded="true" signature="2643:3001" placeholder="SELECT t.idt..TORNEOS..." />
-                <marker date="1446474540000" expanded="true" signature="3958:4064" placeholder="UPDATE inscr..." />
-                <marker date="1446474540000" expanded="true" signature="4558:4604" placeholder="UPDATE clube..." />
-                <marker date="1446474540000" expanded="true" signature="5157:5252" placeholder="SELECT * fro..inscripciones..." />
-                <marker date="1446474540000" expanded="true" signature="6016:6190" placeholder="SELECT j.idj..inscripciones..." />
-                <marker date="1446474540000" expanded="true" signature="7144:7266" placeholder="SELECT idins..inscripciones..." />
-                <marker date="1446474540000" expanded="true" signature="8109:8130" placeholder="UPDATE inscr..." />
-                <marker date="1446474540000" expanded="true" signature="8109:8149" placeholder="UPDATE inscr..." />
-                <marker date="1446474540000" expanded="true" signature="8109:8164" placeholder="UPDATE inscr..." />
-                <marker date="1446474540000" expanded="true" signature="8109:8165" placeholder="UPDATE inscr..." />
-                <marker date="1446474540000" expanded="true" signature="8109:8195" placeholder="UPDATE inscr..." />
-                <marker date="1446474540000" expanded="true" signature="8109:8196" placeholder="UPDATE inscr..." />
-                <marker date="1446474540000" expanded="true" signature="8109:8234" placeholder="UPDATE inscr..." />
-                <marker date="1446474540000" expanded="true" signature="8109:8235" placeholder="UPDATE inscr..." />
-                <marker date="1446474540000" expanded="true" signature="8109:8245" placeholder="UPDATE inscr..." />
-                <marker date="1446474540000" expanded="true" signature="8115:8130" placeholder="INSERT INTO ..." />
-              </folding>
+            <state vertical-scroll-proportion="0.7215777">
+              <caret line="153" column="0" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="updateTorneos.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/admin/updateTorneos.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="updateResultado.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/admin/updateResultado.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-16.25">
+              <caret line="56" column="62" selection-start-line="56" selection-start-column="62" selection-end-line="56" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cargaResultados.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/admin/cargaResultados.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-36.333332">
+              <caret line="156" column="0" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="registrarUsuario.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/registrarUsuario.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.0">
+              <caret line="16" column="96" selection-start-line="16" selection-start-column="96" selection-end-line="16" selection-end-column="96" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="agregarTorneo.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/admin/agregarTorneo.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.625">
+              <caret line="9" column="101" selection-start-line="9" selection-start-column="68" selection-end-line="9" selection-end-column="101" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -123,48 +116,18 @@
       <file leaf-file-name="usuario.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/usuario.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.0">
+            <state vertical-scroll-proportion="-33.125">
               <caret line="68" column="99" selection-start-line="68" selection-start-column="99" selection-end-line="68" selection-end-column="99" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activarJugador.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/admin/activarJugador.jsp">
+      <file leaf-file-name="actualizarUsuario.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/actualizarUsuario.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.708333">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.703704">
-              <caret line="118" column="21" selection-start-line="118" selection-start-column="21" selection-end-line="118" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="torneo.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/torneo.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.4583335">
-              <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.375">
-              <caret line="113" column="28" selection-start-line="113" selection-start-column="28" selection-end-line="113" selection-end-column="28" />
+            <state vertical-scroll-proportion="-10.0">
+              <caret line="16" column="54" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -191,16 +154,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/images/golftime.svg" />
-        <option value="$PROJECT_DIR$/web/js/jsapi.js" />
-        <option value="$PROJECT_DIR$/web/js/admin_stats.js" />
         <option value="$PROJECT_DIR$/web/html-stats.jsp" />
         <option value="$PROJECT_DIR$/src/DAO/ServicioEstadisticas.java" />
         <option value="$PROJECT_DIR$/src/Controller/EstadisticasController.java" />
         <option value="$PROJECT_DIR$/web/misestadisticas.jsp" />
         <option value="$PROJECT_DIR$/src/Controller/EmailUtility.java" />
         <option value="$PROJECT_DIR$/web/logout.jsp" />
-        <option value="$PROJECT_DIR$/web/admin/misestadisticas.jsp" />
         <option value="$PROJECT_DIR$/web/js/scripts.js" />
         <option value="$PROJECT_DIR$/web/listaResultados.jsp" />
         <option value="$PROJECT_DIR$/web/footer.jsp" />
@@ -220,16 +179,12 @@
         <option value="$PROJECT_DIR$/src/Controller/UsuarioController.java" />
         <option value="$PROJECT_DIR$/web/emailRegistrado.jsp" />
         <option value="$PROJECT_DIR$/web/usuarioExistente.jsp" />
-        <option value="$PROJECT_DIR$/src/DAO/ServicioJugadores.java" />
         <option value="$PROJECT_DIR$/web/error.jsp" />
-        <option value="$PROJECT_DIR$/web/actualizarUsuario.jsp" />
         <option value="$PROJECT_DIR$/web/administrador.jsp" />
         <option value="$PROJECT_DIR$/web/recuperoContrasenia.jsp" />
         <option value="$PROJECT_DIR$/web/admin/editarTorneo.jsp" />
         <option value="$PROJECT_DIR$/web/admin/index.jsp" />
         <option value="$PROJECT_DIR$/web/admin/cargaResultados.jsp" />
-        <option value="$PROJECT_DIR$/web/agregarInscripcion.jsp" />
-        <option value="$PROJECT_DIR$/web/registrarUsuario.jsp" />
         <option value="$PROJECT_DIR$/src/DAO/ServicioTorneos.java" />
         <option value="$PROJECT_DIR$/web/inscribirme.jsp" />
         <option value="$PROJECT_DIR$/web/editarInscripcion.jsp" />
@@ -242,6 +197,14 @@
         <option value="$PROJECT_DIR$/web/header.jsp" />
         <option value="$PROJECT_DIR$/web/usuario.jsp" />
         <option value="$PROJECT_DIR$/web/misinscripciones.jsp" />
+        <option value="$PROJECT_DIR$/web/admin/misestadisticas.jsp" />
+        <option value="$PROJECT_DIR$/src/DAO/ServicioJugadores.java" />
+        <option value="$PROJECT_DIR$/web/registrarUsuario.jsp" />
+        <option value="$PROJECT_DIR$/web/actualizarUsuario.jsp" />
+        <option value="$PROJECT_DIR$/web/agregarInscripcion.jsp" />
+        <option value="$PROJECT_DIR$/web/admin/agregarResultado.jsp" />
+        <option value="$PROJECT_DIR$/web/admin/updateResultado.jsp" />
+        <option value="$PROJECT_DIR$/web/admin/editarResultado.jsp" />
       </list>
     </option>
   </component>
@@ -311,6 +274,8 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -371,14 +336,66 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GolfTime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TESIS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GolfTime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TESIS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DAO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GolfTime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TESIS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -389,7 +406,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib/json-20090211.jar!/" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="FullScreen" value="false" />
     <property name="SearchEverywhereHistoryKey" value="error al agregar&#9;null&#9;null&#10;images/&#9;FILE&#9;file:///Users/juanleyba/Proyectos/GolfTime/web/images" />
@@ -738,6 +755,21 @@
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="StatisticProjectComponent">
+    <option name="excludeCompilerOutput" value="true" />
+    <option name="excludeIdea9ArtifactDirectory" value="true" />
+    <option name="excludeGitArtifactDirectory" value="true" />
+    <option name="excludeSubversionArtifactDirectory" value="true" />
+    <option name="excludeDotArtifactDirectory" value="false" />
+    <option name="excludeTargetDirectories" value="true" />
+    <option name="activateWhenOpenProject" value="false" />
+    <option name="excludedDirectories">
+      <value>
+        <list size="0" />
+      </value>
+    </option>
+    <option name="fileTypes" value="class;svn-base;svn-work;Extra;gif;png;jpg;jpeg;bmp;tga;tiff;ear;war;zip;jar;iml;iws;ipr;bz2;gz;" />
+  </component>
   <component name="StructuralSearchPlugin">
     <searchConfiguration name="user defined" created="1444189546057" text="dateHandler" recursive="true" caseInsensitive="true" type="HTML" history="1" />
   </component>
@@ -772,12 +804,18 @@
       <workItem from="1446081799112" duration="52000" />
       <workItem from="1446163377516" duration="2987000" />
       <workItem from="1446207056508" duration="9049000" />
-      <workItem from="1446468953640" duration="5950000" />
+      <workItem from="1446468953640" duration="6027000" />
+      <workItem from="1448467740238" duration="116000" />
+      <workItem from="1455107251929" duration="260000" />
+      <workItem from="1455107549344" duration="199000" />
+      <workItem from="1455108378741" duration="384000" />
+      <workItem from="1455110791376" duration="987000" />
+      <workItem from="1455560429186" duration="2852000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93904000" />
+    <option name="totallyTimeSpent" value="98779000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="826" extended-state="6" />
@@ -792,24 +830,25 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30517712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30517712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15665236" sideWeight="0.49103138" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32970026" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2048611" sideWeight="0.5089686" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32833788" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39100817" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39100817" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32833788" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -860,17 +899,11 @@
           <line>13</line>
           <option name="timeStamp" value="51" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/web/registrarUsuario.jsp</url>
-          <line>34</line>
-          <properties />
-          <option name="timeStamp" value="89" />
-        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="118" />
+      <option name="time" value="120" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -879,54 +912,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/js/scripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/footer.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.125">
-          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/clubes.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="39" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/EmailUtility.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/admin/nuevotorneo.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="33" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/images/golftime.svg">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/html.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.75">
-          <caret line="14" column="59" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -983,7 +972,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -991,7 +979,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -999,7 +986,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="77" selection-start-line="17" selection-start-column="77" selection-end-line="17" selection-end-column="77" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1007,7 +993,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="77" selection-start-line="17" selection-start-column="77" selection-end-line="17" selection-end-column="77" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1015,7 +1000,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1023,7 +1007,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.7083335">
           <caret line="19" column="50" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1031,7 +1014,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.125">
           <caret line="19" column="54" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1039,15 +1021,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.4583335">
           <caret line="19" column="75" selection-start-line="19" selection-start-column="75" selection-end-line="19" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/actualizarUsuario.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.125">
-          <caret line="43" column="43" selection-start-line="43" selection-start-column="43" selection-end-line="43" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1055,7 +1028,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.375">
           <caret line="15" column="69" selection-start-line="15" selection-start-column="69" selection-end-line="15" selection-end-column="69" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1063,7 +1035,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1071,15 +1042,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="17" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/admin/updateTorneos.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1087,7 +1049,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="54" column="46" selection-start-line="54" selection-start-column="46" selection-end-line="54" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1095,23 +1056,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="15" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/admin/cargaResultados.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="156" column="0" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/resultados.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.583333">
-          <caret line="230" column="53" selection-start-line="230" selection-start-column="16" selection-end-line="230" selection-end-column="53" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1119,15 +1063,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.0">
           <caret line="16" column="83" selection-start-line="15" selection-start-column="9" selection-end-line="16" selection-end-column="83" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/registrarUsuario.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-33.75">
-          <caret line="54" column="6" selection-start-line="54" selection-start-column="6" selection-end-line="54" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1153,18 +1088,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="279" column="26" selection-start-line="279" selection-start-column="26" selection-end-line="279" selection-end-column="26" />
-          <folding>
-            <marker date="1446472175000" expanded="true" signature="-1:-1" placeholder="SELECT idint..intervalos..." />
-            <marker date="1446472175000" expanded="true" signature="-1:-1" placeholder="SELECT idtip..tiposTorneo..." />
-            <marker date="1446472175000" expanded="true" signature="-1:-1" placeholder="SELECT idtor..torneos..." />
-            <marker date="1446472175000" expanded="true" signature="-1:-1" placeholder="SELECT idtor..torneos..." />
-            <marker date="1446472175000" expanded="true" signature="-1:-1" placeholder="SELECT idtor..torneos..." />
-            <marker date="1446472175000" expanded="true" signature="-1:-1" placeholder="SELECT idtor..torneos..." />
-            <marker date="1446472175000" expanded="true" signature="-1:-1" placeholder="SELECT idtor..torneos..." />
-            <marker date="1446472175000" expanded="true" signature="-1:-1" placeholder="SELECT idtor..torneos..." />
-            <marker date="1446472175000" expanded="true" signature="-1:-1" placeholder="UPDATE torne..." />
-            <marker date="1446472175000" expanded="true" signature="-1:-1" placeholder="UPDATE torne..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1172,7 +1095,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.333333">
           <caret line="35" column="63" selection-start-line="35" selection-start-column="63" selection-end-line="35" selection-end-column="63" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1184,10 +1106,133 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/editarInscripcion.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.833333">
+          <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="113" column="28" selection-start-line="113" selection-start-column="28" selection-end-line="113" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="118" column="21" selection-start-line="118" selection-start-column="21" selection-end-line="118" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DAO/ServicioInscripciones.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="86" column="342" selection-start-line="86" selection-start-column="342" selection-end-line="86" selection-end-column="342" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1446474540000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1446474540000" expanded="true" signature="-1:-1" placeholder="SELECT idjug..inscripciones..." />
+            <marker date="1446474540000" expanded="true" signature="-1:-1" placeholder="SELECT t.idt..TORNEOS..." />
+            <marker date="1446474540000" expanded="true" signature="-1:-1" placeholder="SELECT t.idt..TORNEOS..." />
+            <marker date="1446474540000" expanded="true" signature="-1:-1" placeholder="SELECT t.idt..TORNEOS..." />
+            <marker date="1446474540000" expanded="true" signature="-1:-1" placeholder="UPDATE inscr..." />
+            <marker date="1446474540000" expanded="true" signature="-1:-1" placeholder="UPDATE clube..." />
+            <marker date="1446474540000" expanded="true" signature="-1:-1" placeholder="SELECT * fro..inscripciones..." />
+            <marker date="1446474540000" expanded="true" signature="-1:-1" placeholder="SELECT j.idj..inscripciones..." />
+            <marker date="1446474540000" expanded="true" signature="-1:-1" placeholder="SELECT idins..inscripciones..." />
+            <marker date="1446474540000" expanded="true" signature="-1:-1" placeholder="UPDATE inscr..." />
+            <marker date="1446474540000" expanded="true" signature="-1:-1" placeholder="UPDATE inscr..." />
+            <marker date="1446474540000" expanded="true" signature="-1:-1" placeholder="UPDATE inscr..." />
+            <marker date="1446474540000" expanded="true" signature="-1:-1" placeholder="UPDATE inscr..." />
+            <marker date="1446474540000" expanded="true" signature="-1:-1" placeholder="UPDATE inscr..." />
+            <marker date="1446474540000" expanded="true" signature="-1:-1" placeholder="UPDATE inscr..." />
+            <marker date="1446474540000" expanded="true" signature="-1:-1" placeholder="UPDATE inscr..." />
+            <marker date="1446474540000" expanded="true" signature="-1:-1" placeholder="UPDATE inscr..." />
+            <marker date="1446474540000" expanded="true" signature="-1:-1" placeholder="UPDATE inscr..." />
+            <marker date="1446474540000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/updateInscripcion.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7721519">
+          <caret line="72" column="2" selection-start-line="72" selection-start-column="2" selection-end-line="72" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/torneo.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/TorneosController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="215" column="0" selection-start-line="215" selection-start-column="0" selection-end-line="215" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/activarJugador.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/misinscripciones.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="71" column="16" selection-start-line="71" selection-start-column="16" selection-end-line="71" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/misestadisticas.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resultados.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.208333">
+          <caret line="230" column="53" selection-start-line="230" selection-start-column="16" selection-end-line="230" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/html.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.75">
+          <caret line="14" column="59" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-76.25">
+          <caret line="122" column="80" selection-start-line="122" selection-start-column="66" selection-end-line="122" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/DAO/ServicioJugadores.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="123" column="183" selection-start-line="123" selection-start-column="183" selection-end-line="123" selection-end-column="183" />
+          <caret line="119" column="51" selection-start-line="119" selection-start-column="51" selection-end-line="119" selection-end-column="51" />
           <folding>
             <marker date="1446220482000" expanded="true" signature="-1:-1" placeholder="SELECT idusu..usuarios..." />
             <marker date="1446220482000" expanded="true" signature="-1:-1" placeholder="SELECT idusu..usuarios..." />
@@ -1204,120 +1249,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/editarInscripcion.jsp">
+    <entry file="file://$PROJECT_DIR$/web/registrarUsuario.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.833333">
-          <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.375">
-          <caret line="113" column="28" selection-start-line="113" selection-start-column="28" selection-end-line="113" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.703704">
-          <caret line="118" column="21" selection-start-line="118" selection-start-column="21" selection-end-line="118" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DAO/ServicioInscripciones.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="86" column="342" selection-start-line="86" selection-start-column="342" selection-end-line="86" selection-end-column="342" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1446474540000" expanded="true" signature="705:926" placeholder="INSERT INTO ..." />
-            <marker date="1446474540000" expanded="true" signature="1480:1699" placeholder="SELECT idjug..inscripciones..." />
-            <marker date="1446474540000" expanded="true" signature="2643:2985" placeholder="SELECT t.idt..TORNEOS..." />
-            <marker date="1446474540000" expanded="true" signature="2643:2996" placeholder="SELECT t.idt..TORNEOS..." />
-            <marker date="1446474540000" expanded="true" signature="2643:3001" placeholder="SELECT t.idt..TORNEOS..." />
-            <marker date="1446474540000" expanded="true" signature="3958:4064" placeholder="UPDATE inscr..." />
-            <marker date="1446474540000" expanded="true" signature="4558:4604" placeholder="UPDATE clube..." />
-            <marker date="1446474540000" expanded="true" signature="5157:5252" placeholder="SELECT * fro..inscripciones..." />
-            <marker date="1446474540000" expanded="true" signature="6016:6190" placeholder="SELECT j.idj..inscripciones..." />
-            <marker date="1446474540000" expanded="true" signature="7144:7266" placeholder="SELECT idins..inscripciones..." />
-            <marker date="1446474540000" expanded="true" signature="8109:8130" placeholder="UPDATE inscr..." />
-            <marker date="1446474540000" expanded="true" signature="8109:8149" placeholder="UPDATE inscr..." />
-            <marker date="1446474540000" expanded="true" signature="8109:8164" placeholder="UPDATE inscr..." />
-            <marker date="1446474540000" expanded="true" signature="8109:8165" placeholder="UPDATE inscr..." />
-            <marker date="1446474540000" expanded="true" signature="8109:8195" placeholder="UPDATE inscr..." />
-            <marker date="1446474540000" expanded="true" signature="8109:8196" placeholder="UPDATE inscr..." />
-            <marker date="1446474540000" expanded="true" signature="8109:8234" placeholder="UPDATE inscr..." />
-            <marker date="1446474540000" expanded="true" signature="8109:8235" placeholder="UPDATE inscr..." />
-            <marker date="1446474540000" expanded="true" signature="8109:8245" placeholder="UPDATE inscr..." />
-            <marker date="1446474540000" expanded="true" signature="8115:8130" placeholder="INSERT INTO ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/updateInscripcion.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7721519">
-          <caret line="72" column="2" selection-start-line="72" selection-start-column="2" selection-end-line="72" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/agregarInscripcion.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.958333">
-          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/torneo.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.4583335">
-          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/TorneosController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="215" column="0" selection-start-line="215" selection-start-column="0" selection-end-line="215" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/header.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.5">
-          <caret line="122" column="80" selection-start-line="122" selection-start-column="66" selection-end-line="122" selection-end-column="80" />
+        <state vertical-scroll-proportion="-10.0">
+          <caret line="16" column="96" selection-start-line="16" selection-start-column="96" selection-end-line="16" selection-end-column="96" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/usuario.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.0">
+        <state vertical-scroll-proportion="-33.125">
           <caret line="68" column="99" selection-start-line="68" selection-start-column="99" selection-end-line="68" selection-end-column="99" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/admin/activarJugador.jsp">
+    <entry file="file://$PROJECT_DIR$/web/admin/agregarTorneo.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.708333">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state vertical-scroll-proportion="-5.625">
+          <caret line="9" column="101" selection-start-line="9" selection-start-column="68" selection-end-line="9" selection-end-column="101" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/misinscripciones.jsp">
+    <entry file="file://$PROJECT_DIR$/web/actualizarUsuario.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.67341775">
-          <caret line="49" column="46" selection-start-line="49" selection-start-column="46" selection-end-line="49" selection-end-column="46" />
+        <state vertical-scroll-proportion="-10.0">
+          <caret line="16" column="54" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/agregarInscripcion.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.5833335">
+          <caret line="61" column="8" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/cargaResultados.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-36.333332">
+          <caret line="156" column="0" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/agregarResultado.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.458333">
+          <caret line="55" column="62" selection-start-line="55" selection-start-column="62" selection-end-line="55" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/updateTorneos.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/updateResultado.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.25">
+          <caret line="56" column="62" selection-start-line="56" selection-start-column="62" selection-end-line="56" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/editarResultado.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7215777">
+          <caret line="153" column="0" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
           <folding />
         </state>
       </provider>

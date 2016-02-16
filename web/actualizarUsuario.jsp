@@ -11,9 +11,9 @@
     int idUsuario = Integer.parseInt(request.getParameter("id"));
     UsuarioController uc = new UsuarioController();
     
-    String nom = request.getParameter("nombreTxt");
-    String ape = request.getParameter("apellidoTxt");
-    String user = request.getParameter("usernameTxt");
+    String nom = new String(request.getParameter("nombreTxt").getBytes("ISO-8859-1"),"UTF-8");;
+    String ape = new String(request.getParameter("apellidoTxt").getBytes("ISO-8859-1"),"UTF-8");;
+    String user = new String(request.getParameter("usernameTxt").getBytes("ISO-8859-1"),"UTF-8");;
     String pass = request.getParameter("passwordTxt");
     String email = request.getParameter("emailTxt");
     

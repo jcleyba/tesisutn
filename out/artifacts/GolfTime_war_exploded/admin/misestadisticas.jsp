@@ -14,7 +14,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
     <%
-        int anio = 2015;
+        int anio = 2016;
         if(request.getParameter("anioFiltro") != null)
         {
             anio = Integer.parseInt(request.getParameter("anioFiltro"));
@@ -159,6 +159,7 @@
               <select name="anioFiltro" class="col m3">
                   <option value="2015" selected disabled>Año</option>
                   <option value="2015" >2015</option>
+                  <option value="2016" >2016</option>
               </select>&nbsp;&nbsp;
               <input type="submit" value="Actualizar" class="btn" onclick="cargarCharts()">
           </form>

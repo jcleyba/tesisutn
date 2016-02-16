@@ -7,14 +7,14 @@
 <%@page import="Controller.EmailUtility"%>
 <%@page import="Controller.UsuarioController"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<<!doctype html>
+<!doctype html>
 <html>
 
 <% 
     UsuarioController uc = new UsuarioController();
     
-    String nom = request.getParameter("nombreTxt");
-    String ape = request.getParameter("apellidoTxt");
+    String nom = new String(request.getParameter("nombreTxt").getBytes("ISO-8859-1"),"UTF-8");
+    String ape = new String(request.getParameter("apellidoTxt").getBytes("ISO-8859-1"),"UTF-8");
     String user = request.getParameter("usernameTxt");
     String pass = request.getParameter("passwordTxt");
     String email = request.getParameter("emailTxt");
