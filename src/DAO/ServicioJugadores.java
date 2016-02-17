@@ -45,25 +45,26 @@ public class ServicioJugadores extends ServicioBase {
     
     public Usuario jugadorPorUserAndPass (String username,String pwd)
     {
-        Usuario user = new Usuario();
+        Usuario user = null;
         try
         {
           abrirConexion();
           //PASAR DATOS A OBJETO JUGADOR
-          String sql = "SELECT idusuarios,username, password, email,clubes_idclubes FROM usuarios, jugadores where username = '"+username+"' and password ='"+pwd+"' and jugadores.usuarios_idusuarios = usuarios.idusuarios";
+          String sql = "SELECT idusuarios,username, password, email,clubes_idclubes FROM usuarios, jugadores where username = ? and password = ? and jugadores.usuarios_idusuarios = usuarios.idusuarios";
           PreparedStatement st = con.prepareStatement(sql);
-          ResultSet rs = st.executeQuery(sql);
+          st.setString(1,username);
+          st.setString(2,pwd);
+          ResultSet rs = st.executeQuery();
           if(rs.next())
           {
+            user = new Usuario();
             user.setIdUsuario(rs.getInt("idusuarios"));
             user.setUsername(rs.getString("username"));
             user.setPassword(rs.getString("password"));
             user.setEmail(rs.getString("email"));
             user.setIdClub(rs.getInt("clubes_idclubes"));         
           }
-          else {
-            user = null;  
-          }
+
           rs.close();
           st.close();
         }

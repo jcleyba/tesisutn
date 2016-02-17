@@ -55,7 +55,7 @@
      <form action="/login.jsp" method="GET" class="col s12">
             <div class="row">
                     <div class="input-field col s12">
-                      <input id="username" type="text" class="validate" pattern="[^'\x22]+" title="Su nombre de usuario no puede tener comillas" required name="txtUserName">
+                      <input id="username" type="text" class="validate" title="Su nombre de usuario no puede tener comillas" required name="txtUserName">
                       <label for="username">Usuario</label>
                     </div>
             </div>
@@ -100,7 +100,7 @@
           <label for="last_name">Apellido</label>
         </div>
            <div class="input-field col s4">
-          <input id="username" type="text" class="validate" pattern="[^'\x22]+"  title="Su nombre de usuario no puede tener comillas" required name="usernameTxt">
+          <input id="username" type="text" class="validate"  title="Su nombre de usuario no puede tener comillas" required name="usernameTxt">
           <label for="username">Nombre de usuario</label>
         </div>
       </div>
