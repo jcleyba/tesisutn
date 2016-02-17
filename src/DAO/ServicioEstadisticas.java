@@ -49,7 +49,7 @@ public class ServicioEstadisticas extends ServicioBase {
         {
             abrirConexion();
             String sql = "SET lc_time_names = 'es_UY'";
-            String sql2 = "SELECT MONTHNAME(t.fecha),avg(sumahoyos) as 'Promedio Score', avg(handicap) as 'Promedio Handicap', count(idresultados) as 'Torneos jugados' from resultados inner join torneos t on idtorneos = categoriasportorneo_torneos_idtorneos where jugadores_idjugadores = "+idJugador+" group by 1 order by 1 desc";
+            String sql2 = "SELECT MONTHNAME(t.fecha),avg(sumahoyos) as 'Promedio Score', avg(handicap) as 'Promedio Handicap', count(idresultados) as 'Torneos jugados' from resultados inner join torneos t on idtorneos = categoriasportorneo_torneos_idtorneos where jugadores_idjugadores = "+idJugador+" group by 1 order by 1 asc";
             PreparedStatement st = con.prepareStatement(sql);
             st.executeQuery();
             PreparedStatement st2 = con.prepareStatement(sql2);
